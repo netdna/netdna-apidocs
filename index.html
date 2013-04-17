@@ -1,0 +1,574 @@
+<!DOCTYPE html><html><head><meta charset="utf8"><title>NetDNA API Docs</title><link rel="stylesheet" href="css/bootstrap.min.css"><link rel="stylesheet" href="css/bootstrap-responsive.min.css"><link rel="stylesheet" href="css/font-awesome.min.css"><link rel="stylesheet" href="css/prettify.css"><link rel="stylesheet" href="css/docs.css"></head></html><body data-spy="scroll" data-target="#docs-navbar" data-offset="81"><div id="spacer"></div><div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><div class="container"><a href="/" class="brand">NetDNA API Docs</a><ul class="nav pull-right"><li><a href="https://github.com/netdna/netdna-apidocs"><i class="icon-github"></i> Github Repo</a></li></ul></div></div></div><div class="container"><div class="row"><div class="span2"><div id="docs-navbar" data-spy="affix"><div class="row"><div class="span2"><ul class="nav nav-pills nav-stacked">
+<li class="active"><a href="#overview">Overview</a></li>
+<li><a href="#support">Support</a></li>
+<li><a href="#account-api">Account API</a></li>
+<li><a href="#users-api">Users API</a></li>
+<li><a href="#zones-api">Zones API</a></li>
+<li><a href="#reports-api">Reports API</a></li>
+<li><a href="#clients-api">Clients API</a></li>
+</ul><small class="muted">Generated with <a href="https://github.com/getprove/node-bootstrap-readme-docs">readme-docs</a></small></div></div></div></div><div class="span10"><h1>NetDNA API Docs</h1>
+<p><a href="http://www.netdna.com">NetDNA</a> is a content delivery network (&quot;CDN&quot;) provider.</p>
+
+
+<hr><h2><a href="#overview" name="overview" id="overview">Overview</a></h2>
+<ol>
+<li><p>Sign up for a free NetDNA <a href="http://www.netdna.com/netdna-free-trial/">developer account</a>.</p>
+</li>
+<li><p>Create a <a href="https://cp.netdna.com/account/api/create">new application</a>.</p>
+</li>
+<li><p>Integrate with our RESTful API using your DSL wrapper:</p>
+<ul>
+<li>Node (NPM) <a href="https://github.com/niftylettuce/node-netdna">https://github.com/niftylettuce/node-netdna</a></li>
+<li>.NET <a href="https://github.com/netdna/netdnarws-net">https://github.com/netdna/netdnarws-net</a></li>
+<li>Ruby <a href="https://github.com/netdna/netdnarws-ruby">https://github.com/netdna/netdnarws-ruby</a></li>
+<li>Python <a href="https://github.com/netdna/netdnarws">https://github.com/netdna/netdnarws</a></li>
+<li>PHP <a href="https://github.com/netdna/netdnarws-php">https://github.com/netdna/netdnarws-php</a></li>
+<li>Perl <a href="https://github.com/netdna/netdnarws-perl">https://github.com/netdna/netdnarws-perl</a></li>
+</ul>
+</li>
+</ol>
+<p>See <a href="#resources">Resources</a> and your DSL wrapper for a list of our API endpoints.</p>
+<hr><h2><a href="#support" name="support" id="support">Support</a></h2>
+<p>Have a question? Check out our <a href="http://support.netdna.com/">Knowledge base</a> to see if your question has already been answered.</p>
+<p>Still need help?  Visit our <a href="http://www.netdna.com/contact/">Contact</a> page to get in touch.</p>
+<p>Feel free to tweet and follow us <a href="https://twitter.com/netdna">@netdna</a> and <a href="https://twitter.com/netdnasupport">@netdnasupport</a>.</p>
+<hr><h2><a href="#resources" name="resources" id="resources">Resources</a></h2>
+<p>Prefix all paths with your company alias (e.g. <code>/{companyAlias}/account.json</code>).</p>
+<hr><h3><a href="#account-api" name="account-api" id="account-api">Account API</a></h3>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>Path</th>
+<th align="center">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/account.json</td>
+<td align="center">GET</td>
+<td>Gets account information</td>
+</tr>
+<tr>
+<td>/account.json</td>
+<td align="center">PUT</td>
+<td>Updates account information</td>
+</tr>
+<tr>
+<td>/account.json/address</td>
+<td align="center">GET</td>
+<td>Get account address information</td>
+</tr>
+<tr>
+<td>/account.json/address</td>
+<td align="center">PUT</td>
+<td>Updates account address information</td>
+</tr>
+</tbody>
+</table>
+<hr><h3><a href="#users-api" name="users-api" id="users-api">Users API</a></h3>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>Path</th>
+<th align="center">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/users.json</td>
+<td align="center">GET</td>
+<td>Returns a list of all users on the specified account</td>
+</tr>
+<tr>
+<td>/users.json</td>
+<td align="center">POST</td>
+<td>Creates a new user on the specified account</td>
+</tr>
+<tr>
+<td>/users.json/{userId}</td>
+<td align="center">GET</td>
+<td>Gets a user by the specified {userId} parameter</td>
+</tr>
+<tr>
+<td>/users.json/{userId}</td>
+<td align="center">GET</td>
+<td>Updates a user by the specified {userId} parameter</td>
+</tr>
+<tr>
+<td>/users.json/{userId}</td>
+<td align="center">DELETE</td>
+<td>Deletes a user by the specified {userId} parameter</td>
+</tr>
+</tbody>
+</table>
+<hr><h3><a href="#zones-api" name="zones-api" id="zones-api">Zones API</a></h3>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>Path</th>
+<th align="center">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/zones.json</td>
+<td align="center">GET</td>
+<td>Returns a list of all zones on the specified account</td>
+</tr>
+<tr>
+<td>/zones.json/summary</td>
+<td align="center">GET</td>
+<td>Gets a summarized count of all zone types on the specified account</td>
+</tr>
+<tr>
+<td>/zones.json/count</td>
+<td align="center">GET</td>
+<td>Counts all zones on the specified account</td>
+</tr>
+</tbody>
+</table>
+<hr><h4><a href="#pull-zone" name="pull-zone" id="pull-zone">Pull Zone</a></h4>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>Path</th>
+<th align="center">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/zones/pull.json</td>
+<td align="center">GET</td>
+<td>Returns a list of all pull zones on the specified account</td>
+</tr>
+<tr>
+<td>/zones/pull.json</td>
+<td align="center">POST</td>
+<td>Creates a new pull zone</td>
+</tr>
+<tr>
+<td>/zones/pull.json/count</td>
+<td align="center">GET</td>
+<td>Counts all pull zones on the specified account</td>
+</tr>
+<tr>
+<td>/zones/pull.json/{zoneId}</td>
+<td align="center">GET</td>
+<td>Gets a pull zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/pull.json/{zoneId}</td>
+<td align="center">PUT</td>
+<td>Updates a pull zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/pull.json/{zoneId}</td>
+<td align="center">DELETE</td>
+<td>Deletes a pull zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/pull.json/{zoneId}</td>
+<td align="center">ENABLE</td>
+<td>Enables a pull zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/pull.json/{zoneId}</td>
+<td align="center">DISABLE</td>
+<td>Disables a pull zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/pull.json/{zoneId}/cache</td>
+<td align="center">DELETE</td>
+<td>Purges pull zone cache</td>
+</tr>
+</tbody>
+</table>
+<hr><h4><a href="#pull-zone-custom-domains" name="pull-zone-custom-domains" id="pull-zone-custom-domains">Pull Zone Custom Domains</a></h4>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>Path</th>
+<th align="center">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/zones/pull/{zoneId}/customdomains.json</td>
+<td align="center">GET</td>
+<td>Returns a list of all custom domains on the zone specified by {zoneId}</td>
+</tr>
+<tr>
+<td>/zones/pull/{zoneId}/customdomains.json</td>
+<td align="center">POST</td>
+<td>Adds a new custom domain to {zoneId}</td>
+</tr>
+<tr>
+<td>/zones/pull/{zoneId}/customdomains.json/{customDomainId}</td>
+<td align="center">GET</td>
+<td>Gets a custom domain specified by the {zoneId} and {customDomainId} parameters</td>
+</tr>
+<tr>
+<td>/zones/pull/{zoneId}/customdomains.json/{customDomainId}</td>
+<td align="center">PUT</td>
+<td>Updates a custom domain specified by the {zoneId} and {customDomainId} parameters</td>
+</tr>
+<tr>
+<td>/zones/pull/{zoneId}/customdomains.json/{customDomainId}</td>
+<td align="center">DELETE</td>
+<td>Deletes a custom domain specified by the {zoneId} and {customDomainId} parameters</td>
+</tr>
+</tbody>
+</table>
+<hr><h4><a href="#push-zone" name="push-zone" id="push-zone">Push Zone</a></h4>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>Path</th>
+<th align="center">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/zones/push.json</td>
+<td align="center">GET</td>
+<td>Returns a list of all push zones on the specified account</td>
+</tr>
+<tr>
+<td>/zones/push.json</td>
+<td align="center">POST</td>
+<td>Creates a new push zone</td>
+</tr>
+<tr>
+<td>/zones/push.json/count</td>
+<td align="center">GET</td>
+<td>Counts all push zones on the specified account</td>
+</tr>
+<tr>
+<td>/zones/push.json/{zoneId}</td>
+<td align="center">GET</td>
+<td>Gets a push zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/push.json/{zoneId}</td>
+<td align="center">PUT</td>
+<td>Updates a push zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/push.json/{zoneId}</td>
+<td align="center">DELETE</td>
+<td>Deletes a push zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/push.json/{zoneId}</td>
+<td align="center">ENABLE</td>
+<td>Enables a push zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/push.json/{zoneId}</td>
+<td align="center">DISABLE</td>
+<td>Disables a push zone specified by the {zoneId} parameter</td>
+</tr>
+</tbody>
+</table>
+<hr><h4><a href="#push-zone-custom-domains" name="push-zone-custom-domains" id="push-zone-custom-domains">Push Zone Custom Domains</a></h4>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>Path</th>
+<th align="center">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/zones/push/{zoneId}/customdomains.json</td>
+<td align="center">GET</td>
+<td>Returns a list of all custom domains on the zone specified by {zoneId}</td>
+</tr>
+<tr>
+<td>/zones/push/{zoneId}/customdomains.json</td>
+<td align="center">POST</td>
+<td>Adds a new custom domain to {zoneId}</td>
+</tr>
+<tr>
+<td>/zones/push/{zoneId}/customdomains.json/{customDomainId}</td>
+<td align="center">GET</td>
+<td>Gets a custom domain specified by the {zoneId} and {customDomainId} parameters</td>
+</tr>
+<tr>
+<td>/zones/push/{zoneId}/customdomains.json/{customDomainId}</td>
+<td align="center">PUT</td>
+<td>Updates a custom domain specified by the {zoneId} and {customDomainId} parameters</td>
+</tr>
+<tr>
+<td>/zones/push/{zoneId}/customdomains.json/{customDomainId}</td>
+<td align="center">DELETE</td>
+<td>Deletes a custom domain specified by the {zoneId} and {customDomainId} parameters</td>
+</tr>
+</tbody>
+</table>
+<hr><h4><a href="#vod-zone" name="vod-zone" id="vod-zone">VOD Zone</a></h4>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>Path</th>
+<th align="center">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/zones/vod.json</td>
+<td align="center">GET</td>
+<td>Returns a list of all VOD zones on the specified account</td>
+</tr>
+<tr>
+<td>/zones/vod.json</td>
+<td align="center">POST</td>
+<td>Creates a new VOD zone</td>
+</tr>
+<tr>
+<td>/zones/vod.json/count</td>
+<td align="center">GET</td>
+<td>Counts all vod zones on the specified account</td>
+</tr>
+<tr>
+<td>/zones/vod.json/{zoneId}</td>
+<td align="center">GET</td>
+<td>Gets a VOD zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/vod.json/{zoneId}</td>
+<td align="center">PUT</td>
+<td>Updates a VOD zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/vod.json/{zoneId}</td>
+<td align="center">DELETE</td>
+<td>Deletes a VOD zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/vod.json/{zoneId}</td>
+<td align="center">ENABLE</td>
+<td>Enables a VOD zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/vod.json/{zoneId}</td>
+<td align="center">DISABLE</td>
+<td>Enables a VOD zone specified by the {zoneId} parameter</td>
+</tr>
+</tbody>
+</table>
+<hr><h4><a href="#vod-zone-custom-domains" name="vod-zone-custom-domains" id="vod-zone-custom-domains">VOD Zone Custom Domains</a></h4>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>Path</th>
+<th align="center">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/zones/vod/{zoneId}/customdomains.json</td>
+<td align="center">GET</td>
+<td>Returns a list of all custom domains on the zone specified by {zoneId}</td>
+</tr>
+<tr>
+<td>/zones/vod/{zoneId}/customdomains.json</td>
+<td align="center">POST</td>
+<td>Adds a new custom domain to {zoneId}</td>
+</tr>
+<tr>
+<td>/zones/vod/{zoneId}/customdomains.json/{customDomainId}</td>
+<td align="center">GET</td>
+<td>Gets a custom domain specified by the {zoneId} and {customDomainId} parameters</td>
+</tr>
+<tr>
+<td>/zones/vod/{zoneId}/customdomains.json/{customDomainId}</td>
+<td align="center">PUT</td>
+<td>Updates a custom domain specified by the {zoneId} and {customDomainId} parameters</td>
+</tr>
+<tr>
+<td>/zones/vod/{zoneId}/customdomains.json/{customDomainId}</td>
+<td align="center">DELETE</td>
+<td>Deletes a custom domain specified by the {zoneId} and {customDomainId} parameters</td>
+</tr>
+</tbody>
+</table>
+<hr><h4><a href="#live-zone" name="live-zone" id="live-zone">Live Zone</a></h4>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>Path</th>
+<th align="center">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/zones/live.json</td>
+<td align="center">GET</td>
+<td>Returns a list of all live zones on the specified account</td>
+</tr>
+<tr>
+<td>/zones/live.json</td>
+<td align="center">POST</td>
+<td>Creates a new live zone</td>
+</tr>
+<tr>
+<td>/zones/live.json/count</td>
+<td align="center">GET</td>
+<td>Counts all live zones on the specified account</td>
+</tr>
+<tr>
+<td>/zones/live.json/{zoneId}</td>
+<td align="center">GET</td>
+<td>Gets a live zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/live.json/{zoneId}</td>
+<td align="center">PUT</td>
+<td>Updates a live zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/live.json/{zoneId}</td>
+<td align="center">DELETE</td>
+<td>Deletes a live zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/live.json/{zoneId}</td>
+<td align="center">ENABLE</td>
+<td>Enables a live zone specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/zones/live.json/{zoneId}</td>
+<td align="center">DISABLE</td>
+<td>Disables a live zone specified by the {zoneId} parameter</td>
+</tr>
+</tbody>
+</table>
+<hr><h4><a href="#zones-ssl" name="zones-ssl" id="zones-ssl">Zones SSL</a></h4>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>Path</th>
+<th align="center">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/zones/{zoneType}/{zoneId}/ssl.json</td>
+<td align="center">GET</td>
+<td>Get the SSL certificate for the specified {zoneType} and {zoneId}</td>
+</tr>
+<tr>
+<td>/zones/{zoneType}/{zoneId}/ssl.json</td>
+<td align="center">POST</td>
+<td>Upload an SSL certificate for the specified {zoneType} and {zoneId}</td>
+</tr>
+<tr>
+<td>/zones/{zoneType}/{zoneId}/ssl.json</td>
+<td align="center">PUT</td>
+<td>Update the SSL certificate for the specified {zoneType} and {zoneId}</td>
+</tr>
+<tr>
+<td>/zones/{zoneType}/{zoneId}/ssl.json</td>
+<td align="center">DELETE</td>
+<td>Remove the SSL certificate for the specified {zoneType} and {zoneId}</td>
+</tr>
+</tbody>
+</table>
+<hr><h3><a href="#reports-api" name="reports-api" id="reports-api">Reports API</a></h3>
+<hr><h4><a href="#stats" name="stats" id="stats">Stats</a></h4>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>Path</th>
+<th align="center">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/reports/stats.json/{reportType}</td>
+<td align="center">GET</td>
+<td>Gets all zone usage statistics optionally broken up by {reportType}. If no {reportType} is given the request will return the total usage for the zones</td>
+</tr>
+<tr>
+<td>/reports/{zoneId}/stats.json/{reportType}</td>
+<td align="center">GET</td>
+<td>Gets the {zoneId} usage statistics optionally broken up by {reportType}. If no {reportType} is given the request will return the total usage for the zones</td>
+</tr>
+</tbody>
+</table>
+<hr><h4><a href="#nodes" name="nodes" id="nodes">Nodes</a></h4>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>Path</th>
+<th align="center">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/reports/nodes.json/{reportType}</td>
+<td align="center">GET</td>
+<td>Gets a list of all active nodes (locations)</td>
+</tr>
+<tr>
+<td>/reports/{zoneId}/nodes.json/{reportType}</td>
+<td align="center">GET</td>
+<td>Gets a list of all active nodes (locations) specified by the {zoneId} parameter</td>
+</tr>
+<tr>
+<td>/reports/nodes.json/stats/{reportType}</td>
+<td align="center">GET</td>
+<td>Get usage statistics broken up by nodes and optionally {reportType}. If no {reportType} is given the request will return the total usage broken up by node</td>
+</tr>
+<tr>
+<td>/reports/{zoneId}/nodes.json/stats/{reportType}</td>
+<td align="center">GET</td>
+<td>Get usage statistics for a particular {zoneId} broken up by nodes and optionally {reportType}. If no {reportType} is given the request will return the total usage broken up by node</td>
+</tr>
+<tr>
+<td>/reports/nodes.json/{nodeId}</td>
+<td align="center">GET</td>
+<td>Gets the node information for the specified {nodeId}</td>
+</tr>
+<tr>
+<td>/reports/{zoneId}/nodes.json/{nodeId}</td>
+<td align="center">GET</td>
+<td>Gets the node information for the specified {nodeId} and {zoneId}</td>
+</tr>
+<tr>
+<td>/reports/nodes.json/{nodeId}/stats/{reportType}</td>
+<td align="center">GET</td>
+<td>Get usage statistics for a particular {nodeId} optionally broken up by {reportType}. If no {reportType} is given the request will return the total usage for the node</td>
+</tr>
+<tr>
+<td>/reports/{zoneId}/nodes.json/{nodeId}/stats/{reportType}</td>
+<td align="center">GET</td>
+<td>Get usage statistics for a particular {nodeId} and {zoneId}, optionally broken up by {reportType}. If no {reportType} is given the request will return the total usage for the node</td>
+</tr>
+</tbody>
+</table>
+<hr><h4><a href="#popular-files" name="popular-files" id="popular-files">Popular Files</a></h4>
+<hr><h4><a href="#status-codes" name="status-codes" id="status-codes">Status Codes</a></h4>
+<hr><h4><a href="#file-types" name="file-types" id="file-types">File Types</a></h4>
+<hr><h4><a href="#file-sizes" name="file-sizes" id="file-sizes">File Sizes</a></h4>
+<hr><h4><a href="#stats-by-directory" name="stats-by-directory" id="stats-by-directory">Stats By Directory</a></h4>
+<hr><h4><a href="#live" name="live" id="live">Live</a></h4>
+<hr><h3><a href="#clients-api" name="clients-api" id="clients-api">Clients API</a></h3>
+<hr><h4><a href="#reports" name="reports" id="reports">Reports</a></h4>
+<hr><h5><a href="#stats-by-file-name" name="stats-by-file-name" id="stats-by-file-name">Stats By File Name</a></h5>
+<hr><h5><a href="#stats-by-custom-domain" name="stats-by-custom-domain" id="stats-by-custom-domain">Stats By Custom Domain</a></h5>
+</div></div></div><script src="js/vendor/jquery.min.js"></script><script src="js/vendor/bootstrap.min.js"></script><script src="js/vendor/prettify.js"></script><script src="js/vendor/jquery.ba-hashchange.js"></script><script src="js/vendor/jquery.scrollTo.js"></script><script src="js/vendor/bootstrap-adjust-hash.js"></script><script src="js/main.js"></script></body>

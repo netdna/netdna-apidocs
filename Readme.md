@@ -113,6 +113,36 @@ Prefix all paths with your company alias (e.g. `/{companyAlias}/account.json`).
 | /zones/push.json/{zoneId}       | ENABLE  | Enables a push zone specified by the {zoneId} parameter   |
 | /zones/push.json/{zoneId}       | DISABLE | Disables a push zone specified by the {zoneId} parameter  |
 
+##### Create Push Zone
+
+**POST** `https://rws.netdna.com/{companyAlias}/zones/push.json`
+
+> Accepted Request Parameters
+
+| Parameter | Default Value | Validation | Description | Since |
+| --------- | ------------- | ---------- | ----------- | ----- |
+| name | - | **REQUIRED** length: 3-30 chars; only letters, digits, and dash (-) accepted | Push Zone name | 1.0 |
+| password | - | **REQUIRED** length: 5-30 chars; | Push Zone FTP password | 1.0 |
+| label | - | length: 1-255 chars | Something that describes your zone | 1.0 |
+| valid_referers | - | length: 1-200 chars | List of domains for http referrer protection (separated by space).  Only the domains in the list will be treated as valid referrers. | 1.0 |
+| content_disposition | 0 | only 0 or 1 accepted | Force files to download | 1.0 |
+| sslshared | 0 | only 0 or 1 accepted | Enable Shared SSL.  This feature allows you to use your zone in HTTPS mode.  You don't need your own SSL certificate, our server netdna-ssl.com will be used. | 1.0 |
+
+> Response Parameters
+
+| Parameter | Description | Since |
+| --------- | ----------- | ----- |
+| id | Push Zone ID | 1.0 |
+| name | Push Zone name | 1.0 |
+| label | Something that describes your zone | 1.0 |
+| valid_referers | List of domains for http referrer protection (separated by space).  Only the domains in the list will be treated as valid referrers. | 1.0 |
+| content_disposition | 0 | only 0 or 1 accepted | Force files to download | 1.0 |
+| sslshared | 0 | only 0 or 1 accepted | Enable Shared SSL.  This feature allows you to use your zone in HTTPS mode.  You don't need your own SSL certificate, our server netdna-ssl.com will be used. | 1.0 |
+| suspend | Flag denoting if the zone has been suspended | 1.0 |
+| locked | Flag denoting if the zone has been locked | 1.0 |
+| inactive | Flag denoting if the zone has been deleted | 1.0 |
+| creation_date | Date Created | 1.0 |
+
 #### Push Zone Custom Domains
 
 | Path                                                     | Method | Description                                                                       |

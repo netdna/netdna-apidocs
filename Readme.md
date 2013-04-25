@@ -115,9 +115,9 @@ Prefix all paths with your company alias (e.g. `/{companyAlias}/account.json`).
 
 ##### Create Push Zone
 
-**POST** `https://rws.netdna.com/{companyAlias}/zones/push.json`
+> **POST** `https://rws.netdna.com/{companyAlias}/zones/push.json`
 
-> Accepted Request Parameters
+###### Accepted Request Parameters
 
 | Parameter | Default Value | Validation | Description | Since |
 | --------- | ------------- | ---------- | ----------- | ----- |
@@ -128,7 +128,7 @@ Prefix all paths with your company alias (e.g. `/{companyAlias}/account.json`).
 | content_disposition | 0 | only 0 or 1 accepted | Force files to download | 1.0 |
 | sslshared | 0 | only 0 or 1 accepted | Enable Shared SSL.  This feature allows you to use your zone in HTTPS mode.  You don't need your own SSL certificate, our server netdna-ssl.com will be used. | 1.0 |
 
-> Response Parameters
+###### Response Parameters
 
 | Parameter | Description | Since |
 | --------- | ----------- | ----- |

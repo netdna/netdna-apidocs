@@ -49,9 +49,6 @@ Parameter | Description |
 {zone_type} | The type of zone you are making a request on - one of push,pull, vod, or live |
 {report_type} | The format you want the reports summarized by - one of hourly,daily, or monthly. This value can be left blank to receive thetotals ungrouped. |
 
-
-<div class="heading">
-
 ---
 
 # Account API

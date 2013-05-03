@@ -14,7 +14,8 @@ readme-docs -t 'NetDNA API Docs' -g https://github.com/netdna/netdna-apidocs
 mkdir -p ~/tmp/build/
 mv build/* ~/tmp/build/
 git checkout gh-pages
-mv ~/tmp/build/* .
+cp -R ~/tmp/build/* .
+rm -rf ~/tmp/build
 git add .
 git commit -m 'updated api docs'
 git push origin gh-pages

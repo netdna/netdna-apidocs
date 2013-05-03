@@ -59,12 +59,20 @@
 </tr>
 </tbody>
 </table>
-<hr>
-<hr><h1><a href="#account-api" name="account-api" id="account-api">Account API</a></h1>
-<hr><h2><a href="#get-account" name="get-account" id="get-account">Get Account</a></h2>
-<p>Gets account information</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+
+---
+
+# Account API
+
+## Get Account
+
+Gets account information
+
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/account.json">https://rws.netdna.com/{companyalias}/account.json</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -128,8 +136,10 @@
 </table>
 <hr><h2><a href="#update-account" name="update-account" id="update-account">Update Account</a></h2>
 <p>Updates account information</p>
-<div><span class="http_method">PUT</span>
+<div class="heading">
+<div class="url PUT"><span class="http_method">PUT</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/account.json">https://rws.netdna.com/{companyalias}/account.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -146,7 +156,8 @@
 <tr>
 <td><code>name</code></td>
 <td>-</td>
-<td>requiredlength: 1-30 charsThe name of your account</td>
+<td><span class="label important">required</span><br>length: 1-30 chars</td>
+<td>The name of your account</td>
 <td>1.0</td>
 <td></td>
 </tr>
@@ -214,8 +225,10 @@
 </table>
 <hr><h2><a href="#get-account-address" name="get-account-address" id="get-account-address">Get Account Address</a></h2>
 <p>Gets account address information</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/account.json/address">https://rws.netdna.com/{companyalias}/account.json/address</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -285,8 +298,10 @@
 </table>
 <hr><h2><a href="#update-account-address" name="update-account-address" id="update-account-address">Update Account Address</a></h2>
 <p>Updates account address information</p>
-<div><span class="http_method">PUT</span>
+<div class="heading">
+<div class="url PUT"><span class="http_method">PUT</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/account.json/address">https://rws.netdna.com/{companyalias}/account.json/address</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -420,8 +435,10 @@
 <hr><h1><a href="#users-api" name="users-api" id="users-api">Users API</a></h1>
 <hr><h2><a href="#list-users" name="list-users" id="list-users">List Users</a></h2>
 <p>Returns a list of all users on the specified account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/users.json">https://rws.netdna.com/{companyalias}/users.json</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -503,8 +520,10 @@
 </table>
 <hr><h2><a href="#create-user" name="create-user" id="create-user">Create User</a></h2>
 <p>Creates a new user on the specified account</p>
-<div><span class="http_method">POST</span>
+<div class="heading">
+<div class="url POST"><span class="http_method">POST</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/users.json">https://rws.netdna.com/{companyalias}/users.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -521,28 +540,32 @@
 <tr>
 <td><code>email</code></td>
 <td>-</td>
-<td>requiredlength: 6-200 chars; valid email addressEmail Address</td>
+<td><span class="label important">required</span><br>length: 6-200 chars; valid email address</td>
+<td>Email Address</td>
 <td>1.0</td>
 <td></td>
 </tr>
 <tr>
 <td><code>password</code></td>
 <td>-</td>
-<td>requiredlength: 5-30 charsPassword</td>
+<td><span class="label important">required</span><br>length: 5-30 chars</td>
+<td>Password</td>
 <td>1.0</td>
 <td></td>
 </tr>
 <tr>
 <td><code>firstname</code></td>
 <td>-</td>
-<td>requiredlength: 1-32 charsFirst Name</td>
+<td><span class="label important">required</span><br>length: 1-32 chars</td>
+<td>First Name</td>
 <td>1.0</td>
 <td></td>
 </tr>
 <tr>
 <td><code>lastname</code></td>
 <td>-</td>
-<td>requiredlength: 1-32 charsLast Name</td>
+<td><span class="label important">required</span><br>length: 1-32 chars</td>
+<td>Last Name</td>
 <td>1.0</td>
 <td></td>
 </tr>
@@ -644,8 +667,10 @@
 </table>
 <hr><h2><a href="#get-user" name="get-user" id="get-user">Get User</a></h2>
 <p>Gets a user specified by the {user_id} parameter</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/users.json/{user_id}">https://rws.netdna.com/{companyalias}/users.json/{user_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -697,8 +722,10 @@
 </table>
 <hr><h2><a href="#update-user" name="update-user" id="update-user">Update User</a></h2>
 <p>Updates a user specified by the {user_id} parameter</p>
-<div><span class="http_method">PUT</span>
+<div class="heading">
+<div class="url PUT"><span class="http_method">PUT</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/users.json/{user_id}">https://rws.netdna.com/{companyalias}/users.json/{user_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -804,21 +831,29 @@
 </table>
 <hr><h2><a href="#delete-user" name="delete-user" id="delete-user">Delete User</a></h2>
 <p>Deletes a user specified by the {user_id} parameter</p>
-<div><span class="http_method">DELETE</span>
+<div class="heading">
+<div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/users.json/{user_id}">https://rws.netdna.com/{companyalias}/users.json/{user_id}</a></span></div>
+</div>
+
+
 
 <hr>
 <hr><h1><a href="#zones-api" name="zones-api" id="zones-api">Zones API</a></h1>
 <hr><h2><a href="#list-zones" name="list-zones" id="list-zones">List Zones</a></h2>
 <p>Returns a list of all zones on the specified account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones.json">https://rws.netdna.com/{companyalias}/zones.json</a></span></div>
+</div>
 
 <hr><h2><a href="#get-zone-summary" name="get-zone-summary" id="get-zone-summary">Get Zone Summary</a></h2>
 <p>Gets a summarized count of all zone types on the specified
 account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones.json/summary">https://rws.netdna.com/{companyalias}/zones.json/summary</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -858,8 +893,10 @@ account</p>
 </table>
 <hr><h2><a href="#get-zone-count" name="get-zone-count" id="get-zone-count">Get Zone Count</a></h2>
 <p>Counts all zones on the specified account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones.json/count">https://rws.netdna.com/{companyalias}/zones.json/count</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -883,8 +920,10 @@ account</p>
 <hr><h1><a href="#pull-zone-api" name="pull-zone-api" id="pull-zone-api">Pull Zone API</a></h1>
 <hr><h2><a href="#list-pull-zones" name="list-pull-zones" id="list-pull-zones">List Pull Zones</a></h2>
 <p>Returns a list of all pull zones on the specified account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/pull.json">https://rws.netdna.com/{companyalias}/zones/pull.json</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -1062,8 +1101,10 @@ account</p>
 </table>
 <hr><h2><a href="#create-pull-zone" name="create-pull-zone" id="create-pull-zone">Create Pull Zone</a></h2>
 <p>Creates a new pull zone</p>
-<div><span class="http_method">POST</span>
+<div class="heading">
+<div class="url POST"><span class="http_method">POST</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/pull.json">https://rws.netdna.com/{companyalias}/zones/pull.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -1080,14 +1121,16 @@ account</p>
 <tr>
 <td><code>name</code></td>
 <td>-</td>
-<td>requiredlength: 3-32 chars; only letters, digits, and dash (-)acceptedPull Zone Name</td>
+<td><span class="label important">required</span><br>length: 3-32 chars; only letters, digits, and dash (-)accepted</td>
+<td>Pull Zone Name</td>
 <td>1.0</td>
 <td></td>
 </tr>
 <tr>
 <td><code>url</code></td>
 <td>-</td>
-<td>requiredlength: 4-100 chars; only valid URLs acceptedOrigin URL</td>
+<td><span class="label important">required</span><br>length: 4-100 chars; only valid URLs accepted</td>
+<td>Origin URL</td>
 <td>1.0</td>
 <td></td>
 </tr>
@@ -1437,8 +1480,10 @@ account</p>
 </table>
 <hr><h2><a href="#get-pull-zones-count" name="get-pull-zones-count" id="get-pull-zones-count">Get Pull Zones Count</a></h2>
 <p>Counts all pull zones on the specified account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/pull.json/count">https://rws.netdna.com/{companyalias}/zones/pull.json/count</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -1460,8 +1505,10 @@ account</p>
 </table>
 <hr><h2><a href="#get-pull-zone" name="get-pull-zone" id="get-pull-zone">Get Pull Zone</a></h2>
 <p>Gets a pull zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -1639,8 +1686,10 @@ account</p>
 </table>
 <hr><h2><a href="#update-pull-zone" name="update-pull-zone" id="update-pull-zone">Update Pull Zone</a></h2>
 <p>Updates a pull zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">PUT</span>
+<div class="heading">
+<div class="url PUT"><span class="http_method">PUT</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2000,23 +2049,31 @@ account</p>
 </table>
 <hr><h2><a href="#delete-pull-zone" name="delete-pull-zone" id="delete-pull-zone">Delete Pull Zone</a></h2>
 <p>Deletes a pull zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">DELETE</span>
+<div class="heading">
+<div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h2><a href="#enable-pull-zone" name="enable-pull-zone" id="enable-pull-zone">Enable Pull Zone</a></h2>
 <p>Enables a pull zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">ENABLE</span>
+<div class="heading">
+<div class="url ENABLE"><span class="http_method">ENABLE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h2><a href="#disable-pull-zone" name="disable-pull-zone" id="disable-pull-zone">Disable Pull Zone</a></h2>
 <p>Disables a pull zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">DISABLE</span>
+<div class="heading">
+<div class="url DISABLE"><span class="http_method">DISABLE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h2><a href="#purge-cache" name="purge-cache" id="purge-cache">Purge Cache</a></h2>
 <p>Purges pull zone cache</p>
-<div><span class="http_method">DELETE</span>
+<div class="heading">
+<div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}/cache">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}/cache</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2044,8 +2101,10 @@ account</p>
 <hr><h2><a href="#list-custom-domains" name="list-custom-domains" id="list-custom-domains">List Custom Domains</a></h2>
 <p>Returns a list of all custom domains on the zone specified by
 {zone_id}</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json">https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2079,8 +2138,10 @@ account</p>
 </table>
 <hr><h2><a href="#create-custom-domain" name="create-custom-domain" id="create-custom-domain">Create Custom Domain</a></h2>
 <p>Adds a new custom domain to {zone_id}</p>
-<div><span class="http_method">POST</span>
+<div class="heading">
+<div class="url POST"><span class="http_method">POST</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json">https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2097,7 +2158,8 @@ account</p>
 <tr>
 <td><code>custom_domain</code></td>
 <td>-</td>
-<td>requiredlength: 1-255 chars, valid::custom_domain, !valid::full_domainA valid custom domain</td>
+<td><span class="label important">required</span><br>length: 1-255 chars, valid::custom_domain, !valid::full_domain</td>
+<td>A valid custom domain</td>
 <td>1.0</td>
 <td></td>
 </tr>
@@ -2144,8 +2206,10 @@ account</p>
 <hr><h2><a href="#get-custom-domain" name="get-custom-domain" id="get-custom-domain">Get Custom Domain</a></h2>
 <p>Gets a custom domain specified by the {zone_id} and
 {customdomain_id} parameters</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json/{customdomain_id}">https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json/{customdomain_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2179,8 +2243,10 @@ account</p>
 </table>
 <hr><h2><a href="#update-custom-domain" name="update-custom-domain" id="update-custom-domain">Update Custom Domain</a></h2>
 <p>Updates a custom domain specified by the id parameter</p>
-<div><span class="http_method">PUT</span>
+<div class="heading">
+<div class="url PUT"><span class="http_method">PUT</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json/{customdomain_id}">https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json/{customdomain_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2197,7 +2263,8 @@ account</p>
 <tr>
 <td><code>custom_domain</code></td>
 <td>-</td>
-<td>requiredlength: 1-255 chars, valid::custom_domain, !valid::full_domainA new valid custom domain</td>
+<td><span class="label important">required</span><br>length: 1-255 chars, valid::custom_domain, !valid::full_domain</td>
+<td>A new valid custom domain</td>
 <td>1.0</td>
 <td></td>
 </tr>
@@ -2236,15 +2303,21 @@ account</p>
 <hr><h2><a href="#delete-custom-domain" name="delete-custom-domain" id="delete-custom-domain">Delete Custom Domain</a></h2>
 <p>Deletes a custom domain specified by the {zone_id} and
 {customdomain_id} parameters</p>
-<div><span class="http_method">DELETE</span>
+<div class="heading">
+<div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json/{customdomain_id}">https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json/{customdomain_id}</a></span></div>
+</div>
+
+
 
 <hr>
 <hr><h1><a href="#push-zone-api" name="push-zone-api" id="push-zone-api">Push Zone API</a></h1>
 <hr><h2><a href="#list-push-zones" name="list-push-zones" id="list-push-zones">List Push Zones</a></h2>
 <p>Returns a list of all push zones on the specified account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/push.json">https://rws.netdna.com/{companyalias}/zones/push.json</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2320,8 +2393,10 @@ account</p>
 </table>
 <hr><h2><a href="#create-push-zone" name="create-push-zone" id="create-push-zone">Create Push Zone</a></h2>
 <p>Creates a new push zone</p>
-<div><span class="http_method">POST</span>
+<div class="heading">
+<div class="url POST"><span class="http_method">POST</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/push.json">https://rws.netdna.com/{companyalias}/zones/push.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2338,14 +2413,16 @@ account</p>
 <tr>
 <td><code>name</code></td>
 <td>-</td>
-<td>requiredlength: 3-30 chars; only letters, digits, and dash (-)acceptedPush Zone name</td>
+<td><span class="label important">required</span><br>length: 3-30 chars; only letters, digits, and dash (-)accepted</td>
+<td>Push Zone name</td>
 <td>1.0</td>
 <td></td>
 </tr>
 <tr>
 <td><code>password</code></td>
 <td>-</td>
-<td>requiredlength: 5-30 chars;Push Zone FTP password</td>
+<td><span class="label important">required</span><br>length: 5-30 chars;</td>
+<td>Push Zone FTP password</td>
 <td>1.0</td>
 <td></td>
 </tr>
@@ -2457,8 +2534,10 @@ account</p>
 </table>
 <hr><h2><a href="#get-push-zones-count" name="get-push-zones-count" id="get-push-zones-count">Get Push Zones Count</a></h2>
 <p>Counts all push zones on the specified account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/push.json/count">https://rws.netdna.com/{companyalias}/zones/push.json/count</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2480,8 +2559,10 @@ account</p>
 </table>
 <hr><h2><a href="#get-push-zone" name="get-push-zone" id="get-push-zone">Get Push Zone</a></h2>
 <p>Gets a push zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2557,8 +2638,10 @@ account</p>
 </table>
 <hr><h2><a href="#update-push-zone" name="update-push-zone" id="update-push-zone">Update Push Zone</a></h2>
 <p>Updates a push zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">PUT</span>
+<div class="heading">
+<div class="url PUT"><span class="http_method">PUT</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2680,26 +2763,36 @@ account</p>
 </table>
 <hr><h2><a href="#delete-push-zone" name="delete-push-zone" id="delete-push-zone">Delete Push Zone</a></h2>
 <p>Deletes a push zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">DELETE</span>
+<div class="heading">
+<div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h2><a href="#enable-push-zone" name="enable-push-zone" id="enable-push-zone">Enable Push Zone</a></h2>
 <p>Enables a push zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">ENABLE</span>
+<div class="heading">
+<div class="url ENABLE"><span class="http_method">ENABLE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h2><a href="#disable-push-zone" name="disable-push-zone" id="disable-push-zone">Disable Push Zone</a></h2>
 <p>Disables a push zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">DISABLE</span>
+<div class="heading">
+<div class="url DISABLE"><span class="http_method">DISABLE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}</a></span></div>
+</div>
+
+
 
 <hr>
 <hr><h1><a href="#push-zone-custom-domains-api" name="push-zone-custom-domains-api" id="push-zone-custom-domains-api">Push Zone Custom Domains API</a></h1>
 <hr><h2><a href="#list-custom-domains" name="list-custom-domains" id="list-custom-domains">List Custom Domains</a></h2>
 <p>Returns a list of all custom domains on the zone specified by
 {zone_id}</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json">https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2733,8 +2826,10 @@ account</p>
 </table>
 <hr><h2><a href="#create-custom-domain" name="create-custom-domain" id="create-custom-domain">Create Custom Domain</a></h2>
 <p>Adds a new custom domain to {zone_id}</p>
-<div><span class="http_method">POST</span>
+<div class="heading">
+<div class="url POST"><span class="http_method">POST</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json">https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2751,7 +2846,8 @@ account</p>
 <tr>
 <td><code>custom_domain</code></td>
 <td>-</td>
-<td>requiredlength: 1-255 chars, valid::custom_domain, !valid::full_domainA valid custom domain</td>
+<td><span class="label important">required</span><br>length: 1-255 chars, valid::custom_domain, !valid::full_domain</td>
+<td>A valid custom domain</td>
 <td>1.0</td>
 <td></td>
 </tr>
@@ -2798,8 +2894,10 @@ account</p>
 <hr><h2><a href="#get-custom-domain" name="get-custom-domain" id="get-custom-domain">Get Custom Domain</a></h2>
 <p>Gets a custom domain specified by the {zone_id} and
 {customdomain_id} parameters</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json/{customdomain_id}">https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json/{customdomain_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2833,8 +2931,10 @@ account</p>
 </table>
 <hr><h2><a href="#update-custom-domain" name="update-custom-domain" id="update-custom-domain">Update Custom Domain</a></h2>
 <p>Updates a custom domain specified by the id parameter</p>
-<div><span class="http_method">PUT</span>
+<div class="heading">
+<div class="url PUT"><span class="http_method">PUT</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json/{customdomain_id}">https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json/{customdomain_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2851,7 +2951,8 @@ account</p>
 <tr>
 <td><code>custom_domain</code></td>
 <td>-</td>
-<td>requiredlength: 1-255 chars, valid::custom_domain, !valid::full_domainA new valid custom domain</td>
+<td><span class="label important">required</span><br>length: 1-255 chars, valid::custom_domain, !valid::full_domain</td>
+<td>A new valid custom domain</td>
 <td>1.0</td>
 <td></td>
 </tr>
@@ -2890,15 +2991,21 @@ account</p>
 <hr><h2><a href="#delete-custom-domain" name="delete-custom-domain" id="delete-custom-domain">Delete Custom Domain</a></h2>
 <p>Deletes a custom domain specified by the {zone_id} and
 {customdomain_id} parameters</p>
-<div><span class="http_method">DELETE</span>
+<div class="heading">
+<div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json/{customdomain_id}">https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json/{customdomain_id}</a></span></div>
+</div>
+
+
 
 <hr>
 <hr><h1><a href="#vod-zone-api" name="vod-zone-api" id="vod-zone-api">VOD Zone API</a></h1>
 <hr><h2><a href="#list-vod-zones" name="list-vod-zones" id="list-vod-zones">List VOD Zones</a></h2>
 <p>Returns a list of all VOD zones on the specified account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/vod.json">https://rws.netdna.com/{companyalias}/zones/vod.json</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2956,8 +3063,10 @@ account</p>
 </table>
 <hr><h2><a href="#create-vod-zone" name="create-vod-zone" id="create-vod-zone">Create VOD Zone</a></h2>
 <p>Creates a new VOD zone</p>
-<div><span class="http_method">POST</span>
+<div class="heading">
+<div class="url POST"><span class="http_method">POST</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/vod.json">https://rws.netdna.com/{companyalias}/zones/vod.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -2974,14 +3083,16 @@ account</p>
 <tr>
 <td><code>name</code></td>
 <td>-</td>
-<td>requiredlength: 3-30 chars; only letters, digits, and dash (-)acceptedVOD Zone user name</td>
+<td><span class="label important">required</span><br>length: 3-30 chars; only letters, digits, and dash (-)accepted</td>
+<td>VOD Zone user name</td>
 <td>1.0</td>
 <td></td>
 </tr>
 <tr>
 <td><code>password</code></td>
 <td>-</td>
-<td>requiredlength: 5-30 charsYour desired password</td>
+<td><span class="label important">required</span><br>length: 5-30 chars</td>
+<td>Your desired password</td>
 <td>1.0</td>
 <td></td>
 </tr>
@@ -3059,8 +3170,10 @@ account</p>
 </table>
 <hr><h2><a href="#get-vod-zones-count" name="get-vod-zones-count" id="get-vod-zones-count">Get VOD Zones Count</a></h2>
 <p>Counts all vod zones on the specified account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/vod.json/count">https://rws.netdna.com/{companyalias}/zones/vod.json/count</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -3082,8 +3195,10 @@ account</p>
 </table>
 <hr><h2><a href="#get-vod-zone" name="get-vod-zone" id="get-vod-zone">Get VOD Zone</a></h2>
 <p>Gets a VOD zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -3141,8 +3256,10 @@ account</p>
 </table>
 <hr><h2><a href="#update-vod-zone" name="update-vod-zone" id="update-vod-zone">Update VOD Zone</a></h2>
 <p>Updates a VOD zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">PUT</span>
+<div class="heading">
+<div class="url PUT"><span class="http_method">PUT</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -3238,26 +3355,36 @@ account</p>
 </table>
 <hr><h2><a href="#delete-vod-zone" name="delete-vod-zone" id="delete-vod-zone">Delete VOD Zone</a></h2>
 <p>Deletes a VOD zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">DELETE</span>
+<div class="heading">
+<div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h2><a href="#enable-vod-zone" name="enable-vod-zone" id="enable-vod-zone">Enable VOD Zone</a></h2>
 <p>Enables a VOD zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">ENABLE</span>
+<div class="heading">
+<div class="url ENABLE"><span class="http_method">ENABLE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h2><a href="#disable-vod-zone" name="disable-vod-zone" id="disable-vod-zone">Disable VOD Zone</a></h2>
 <p>Disables a VOD zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">DISABLE</span>
+<div class="heading">
+<div class="url DISABLE"><span class="http_method">DISABLE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}</a></span></div>
+</div>
+
+
 
 <hr>
 <hr><h1><a href="#vod-zone-custom-domains-api" name="vod-zone-custom-domains-api" id="vod-zone-custom-domains-api">VOD Zone Custom Domains API</a></h1>
 <hr><h2><a href="#list-custom-domains" name="list-custom-domains" id="list-custom-domains">List Custom Domains</a></h2>
 <p>Returns a list of all custom domains on the zone specified by
 {zone_id}</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json">https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -3291,8 +3418,10 @@ account</p>
 </table>
 <hr><h2><a href="#create-custom-domain" name="create-custom-domain" id="create-custom-domain">Create Custom Domain</a></h2>
 <p>Adds a new custom domain to {zone_id}</p>
-<div><span class="http_method">POST</span>
+<div class="heading">
+<div class="url POST"><span class="http_method">POST</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json">https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -3309,7 +3438,8 @@ account</p>
 <tr>
 <td><code>custom_domain</code></td>
 <td>-</td>
-<td>requiredlength: 1-255 chars, valid::custom_domain, !valid::full_domainA valid custom domain</td>
+<td><span class="label important">required</span><br>length: 1-255 chars, valid::custom_domain, !valid::full_domain</td>
+<td>A valid custom domain</td>
 <td>1.0</td>
 <td></td>
 </tr>
@@ -3356,8 +3486,10 @@ account</p>
 <hr><h2><a href="#get-custom-domain" name="get-custom-domain" id="get-custom-domain">Get Custom Domain</a></h2>
 <p>Gets a custom domain specified by the {zone_id} and
 {customdomain_id} parameters</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json/{customdomain_id}">https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json/{customdomain_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -3391,8 +3523,10 @@ account</p>
 </table>
 <hr><h2><a href="#update-custom-domain" name="update-custom-domain" id="update-custom-domain">Update Custom Domain</a></h2>
 <p>Updates a custom domain specified by the id parameter</p>
-<div><span class="http_method">PUT</span>
+<div class="heading">
+<div class="url PUT"><span class="http_method">PUT</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json/{customdomain_id}">https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json/{customdomain_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -3409,7 +3543,8 @@ account</p>
 <tr>
 <td><code>custom_domain</code></td>
 <td>-</td>
-<td>requiredlength: 1-255 chars, valid::custom_domain, !valid::full_domainA new valid custom domain</td>
+<td><span class="label important">required</span><br>length: 1-255 chars, valid::custom_domain, !valid::full_domain</td>
+<td>A new valid custom domain</td>
 <td>1.0</td>
 <td></td>
 </tr>
@@ -3448,15 +3583,21 @@ account</p>
 <hr><h2><a href="#delete-custom-domain" name="delete-custom-domain" id="delete-custom-domain">Delete Custom Domain</a></h2>
 <p>Deletes a custom domain specified by the {zone_id} and
 {customdomain_id} parameters</p>
-<div><span class="http_method">DELETE</span>
+<div class="heading">
+<div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json/{customdomain_id}">https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json/{customdomain_id}</a></span></div>
+</div>
+
+
 
 <hr>
 <hr><h1><a href="#live-zone-api" name="live-zone-api" id="live-zone-api">Live Zone API</a></h1>
 <hr><h2><a href="#list-live-zones" name="list-live-zones" id="list-live-zones">List Live Zones</a></h2>
 <p>Returns a list of all live zones on the specified account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/live.json">https://rws.netdna.com/{companyalias}/zones/live.json</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -3514,8 +3655,10 @@ account</p>
 </table>
 <hr><h2><a href="#create-live-zone" name="create-live-zone" id="create-live-zone">Create Live Zone</a></h2>
 <p>Creates a new live zone</p>
-<div><span class="http_method">POST</span>
+<div class="heading">
+<div class="url POST"><span class="http_method">POST</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/live.json">https://rws.netdna.com/{companyalias}/zones/live.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -3532,7 +3675,8 @@ account</p>
 <tr>
 <td><code>name</code></td>
 <td>-</td>
-<td>requiredlength: 3-30 chars; only letters, digits, and dash (-)acceptedYour desired zone name</td>
+<td><span class="label important">required</span><br>length: 3-30 chars; only letters, digits, and dash (-)accepted</td>
+<td>Your desired zone name</td>
 <td>1.0</td>
 <td></td>
 </tr>
@@ -3610,8 +3754,10 @@ account</p>
 </table>
 <hr><h2><a href="#get-live-zones-count" name="get-live-zones-count" id="get-live-zones-count">Get Live Zones Count</a></h2>
 <p>Counts all live zones on the specified account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/live.json/count">https://rws.netdna.com/{companyalias}/zones/live.json/count</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -3633,8 +3779,10 @@ account</p>
 </table>
 <hr><h2><a href="#get-live-zone" name="get-live-zone" id="get-live-zone">Get Live Zone</a></h2>
 <p>Gets a live zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -3692,8 +3840,10 @@ account</p>
 </table>
 <hr><h2><a href="#update-live-zone" name="update-live-zone" id="update-live-zone">Update Live Zone</a></h2>
 <p>Updates a live zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">PUT</span>
+<div class="heading">
+<div class="url PUT"><span class="http_method">PUT</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -3789,32 +3939,44 @@ account</p>
 </table>
 <hr><h2><a href="#delete-live-zone" name="delete-live-zone" id="delete-live-zone">Delete Live Zone</a></h2>
 <p>Deletes a live zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">DELETE</span>
+<div class="heading">
+<div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h2><a href="#enable-live-zone" name="enable-live-zone" id="enable-live-zone">Enable Live Zone</a></h2>
 <p>Enables a live zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">ENABLE</span>
+<div class="heading">
+<div class="url ENABLE"><span class="http_method">ENABLE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}</a></span></div>
+</div>
 
 <hr><h2><a href="#disable-live-zone" name="disable-live-zone" id="disable-live-zone">Disable Live Zone</a></h2>
 <p>Disables a live zone specified by the {zone_id} parameter</p>
-<div><span class="http_method">DISABLE</span>
+<div class="heading">
+<div class="url DISABLE"><span class="http_method">DISABLE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}">https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}</a></span></div>
+</div>
+
+
 
 <hr>
 <hr><h1><a href="#zones-ssl-api" name="zones-ssl-api" id="zones-ssl-api">Zones SSL API</a></h1>
 <hr><h2><a href="#get-zones-ssl-information" name="get-zones-ssl-information" id="get-zones-ssl-information">Get Zone's SSL Information</a></h2>
 <p>Get the SSL certificate for the specified {zone_type} and
 {zone_id}.</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/ssl.json">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/ssl.json</a></span></div>
+</div>
 
 <hr><h2><a href="#install-ssl-on-zone" name="install-ssl-on-zone" id="install-ssl-on-zone">Install SSL on Zone</a></h2>
 <p>Upload an SSL certificate for the specified {zone_type} and
 {zone_id}.</p>
-<div><span class="http_method">POST</span>
+<div class="heading">
+<div class="url POST"><span class="http_method">POST</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/ssl.json">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/ssl.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -3831,14 +3993,16 @@ account</p>
 <tr>
 <td><code>ssl_crt</code></td>
 <td>-</td>
-<td>requiredThe SSL certificate you are installing.</td>
+<td><span class="label important">required</span><br></td>
+<td>The SSL certificate you are installing.</td>
 <td>1.0</td>
 <td></td>
 </tr>
 <tr>
 <td><code>ssl_key</code></td>
 <td>-</td>
-<td>requiredThe key for the SSL certificate you are installing.</td>
+<td><span class="label important">required</span><br></td>
+<td>The key for the SSL certificate you are installing.</td>
 <td>1.0</td>
 <td></td>
 </tr>
@@ -3908,8 +4072,10 @@ account</p>
 <hr><h2><a href="#update-zones-ssl-information" name="update-zones-ssl-information" id="update-zones-ssl-information">Update Zone's SSL Information</a></h2>
 <p>Update the SSL certificate for the specified {zone_type} and
 {zone_id}.</p>
-<div><span class="http_method">PUT</span>
+<div class="heading">
+<div class="url PUT"><span class="http_method">PUT</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/ssl.json">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/ssl.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -3926,14 +4092,16 @@ account</p>
 <tr>
 <td><code>ssl_crt</code></td>
 <td>-</td>
-<td>requiredThe SSL certificate you are installing.</td>
+<td><span class="label important">required</span><br></td>
+<td>The SSL certificate you are installing.</td>
 <td>1.0</td>
 <td></td>
 </tr>
 <tr>
 <td><code>ssl_key</code></td>
 <td>-</td>
-<td>requiredThe key for the SSL certificate you are installing.</td>
+<td><span class="label important">required</span><br></td>
+<td>The key for the SSL certificate you are installing.</td>
 <td>1.0</td>
 <td></td>
 </tr>
@@ -4003,20 +4171,28 @@ account</p>
 <hr><h2><a href="#remove-zones-ssl-information" name="remove-zones-ssl-information" id="remove-zones-ssl-information">Remove Zone's SSL Information</a></h2>
 <p>Remove the SSL certificate for the specified {zone_type} and
 {zone_id}.</p>
-<div><span class="http_method">DELETE</span>
+<div class="heading">
+<div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/ssl.json">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/ssl.json</a></span></div>
+</div>
+
+
 
 <hr>
 <hr><h1><a href="#zones-upstream-api" name="zones-upstream-api" id="zones-upstream-api">Zones Upstream API</a></h1>
 <hr><h2><a href="#get-upstream-information-for-the-current-zone" name="get-upstream-information-for-the-current-zone" id="get-upstream-information-for-the-current-zone">Get Upstream information for the current zone</a></h2>
 <p>Get the upstream information for the specified {zone_id}.</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/upstream.json">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/upstream.json</a></span></div>
+</div>
 
 <hr><h2><a href="#enable-upstream-on-zone" name="enable-upstream-on-zone" id="enable-upstream-on-zone">Enable Upstream on Zone</a></h2>
 <p>Create and enable Upstream for a specific {zone_id}.</p>
-<div><span class="http_method">POST</span>
+<div class="heading">
+<div class="url POST"><span class="http_method">POST</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/upstream.json">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/upstream.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -4033,14 +4209,16 @@ account</p>
 <tr>
 <td><code>server_url</code></td>
 <td>-</td>
-<td>requiredThe server url or ip to provide the streaming resources</td>
+<td><span class="label important">required</span><br></td>
+<td>The server url or ip to provide the streaming resources</td>
 <td>1.0.1</td>
 <td></td>
 </tr>
 <tr>
 <td><code>port</code></td>
 <td>-</td>
-<td>requiredThe port where server is to be called</td>
+<td><span class="label important">required</span><br></td>
+<td>The port where server is to be called</td>
 <td>1.0.1</td>
 <td></td>
 </tr>
@@ -4084,8 +4262,10 @@ account</p>
 </table>
 <hr><h2><a href="#update-zones-upstream-information" name="update-zones-upstream-information" id="update-zones-upstream-information">Update Zone's Upstream Information</a></h2>
 <p>Update the Upstream information for the specified {zone_id}.</p>
-<div><span class="http_method">PUT</span>
+<div class="heading">
+<div class="url PUT"><span class="http_method">PUT</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/upstream.json">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/upstream.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -4102,21 +4282,24 @@ account</p>
 <tr>
 <td><code>upstream_id</code></td>
 <td>-</td>
-<td>requiredThe Upstream Information you&#39;re modifying.</td>
+<td><span class="label important">required</span><br></td>
+<td>The Upstream Information you&#39;re modifying.</td>
 <td>1.0.1</td>
 <td></td>
 </tr>
 <tr>
 <td><code>server_url</code></td>
 <td>-</td>
-<td>requiredThe server url or ip</td>
+<td><span class="label important">required</span><br></td>
+<td>The server url or ip</td>
 <td>1.0.1</td>
 <td></td>
 </tr>
 <tr>
 <td><code>port</code></td>
 <td>-</td>
-<td>requiredThe port it uses to call the server</td>
+<td><span class="label important">required</span><br></td>
+<td>The port it uses to call the server</td>
 <td>1.0.1</td>
 <td></td>
 </tr>
@@ -4160,8 +4343,12 @@ account</p>
 </table>
 <hr><h2><a href="#remove-zones-upstream-information" name="remove-zones-upstream-information" id="remove-zones-upstream-information">Remove Zone's Upstream Information</a></h2>
 <p>Remove the Upstream Information for the specified {zone_id}.</p>
-<div><span class="http_method">DELETE</span>
+<div class="heading">
+<div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/upstream.json">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/upstream.json</a></span></div>
+</div>
+
+
 
 <hr>
 <hr><h1><a href="#reports-by-zone-api" name="reports-by-zone-api" id="reports-by-zone-api">Reports by Zone API</a></h1>
@@ -4169,8 +4356,10 @@ account</p>
 <p>Gets all zone usage statistics optionally broken up by
 {report_type}. If no {report_type} is given the request will return
 the total usage for the zones.</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/stats.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/stats.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -4248,8 +4437,10 @@ the total usage for the zones.</p>
 <p>Gets the {zone_id} usage statistics optionally broken up by
 {report_type}. If no {report_type} is given the request will return
 the total usage for the zones.</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_id}/stats.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/{zone_id}/stats.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -4327,8 +4518,10 @@ the total usage for the zones.</p>
 <hr><h1><a href="#reports-by-location-api" name="reports-by-location-api" id="reports-by-location-api">Reports by Location API</a></h1>
 <hr><h2><a href="#list-nodes" name="list-nodes" id="list-nodes">List Nodes</a></h2>
 <p>Gets a list of all active nodes (locations)</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/nodes.json">https://rws.netdna.com/{companyalias}/reports/nodes.json</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -4363,8 +4556,10 @@ the total usage for the zones.</p>
 <hr><h2><a href="#list-nodes-by-zone" name="list-nodes-by-zone" id="list-nodes-by-zone">List Nodes by Zone</a></h2>
 <p>Gets a list of all active nodes (locations) specified by the
 {zone_id} parameter</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_id}/nodes.json">https://rws.netdna.com/{companyalias}/reports/{zone_id}/nodes.json</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -4400,8 +4595,10 @@ the total usage for the zones.</p>
 <p>Get usage statistics broken up by nodes and optionally
 {report_type}. If no {report_type} is given the request will return
 the total usage broken up by node.</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/nodes.json/stats/{report_type}">https://rws.netdna.com/{companyalias}/reports/nodes.json/stats/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -4497,8 +4694,10 @@ the total usage broken up by node.</p>
 <p>Get usage statistics for a particular {zone_id} broken up by
 nodes and optionally {report_type}. If no {report_type} is given
 the request will return the total usage broken up by node.</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_id}/nodes.json/stats/{report_type}">https://rws.netdna.com/{companyalias}/reports/{zone_id}/nodes.json/stats/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -4592,8 +4791,10 @@ the request will return the total usage broken up by node.</p>
 </table>
 <hr><h2><a href="#get-zone-node" name="get-zone-node" id="get-zone-node">Get Zone Node</a></h2>
 <p>Gets the node information for the specified {node_id}</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/nodes.json/{node_id}">https://rws.netdna.com/{companyalias}/reports/nodes.json/{node_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -4628,8 +4829,10 @@ the request will return the total usage broken up by node.</p>
 <hr><h2><a href="#get-node-by-zone" name="get-node-by-zone" id="get-node-by-zone">Get Node by Zone</a></h2>
 <p>Gets the node information for the specified {node_id} and
 {zone_id}</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_id}/nodes.json/{node_id}">https://rws.netdna.com/{companyalias}/reports/{zone_id}/nodes.json/{node_id}</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -4665,8 +4868,10 @@ the request will return the total usage broken up by node.</p>
 <p>Get usage statistics for a particular {node_id} optionally
 broken up by {report_type}. If no {report_type} is given the
 request will return the total usage for the node.</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/nodes.json/{node_id}/stats/{report_type}">https://rws.netdna.com/{companyalias}/reports/nodes.json/{node_id}/stats/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -4744,8 +4949,10 @@ request will return the total usage for the node.</p>
 <p>Get usage statistics for a particular {node_id} and {zone_id},
 optionally broken up by {report_type}. If no {report_type} is given
 the request will return the total usage for the node.</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_id}/nodes.json/{node_id}/stats/{report_type}">https://rws.netdna.com/{companyalias}/reports/{zone_id}/nodes.json/{node_id}/stats/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -4824,8 +5031,10 @@ the request will return the total usage for the node.</p>
 <hr><h2><a href="#list-popular-files" name="list-popular-files" id="list-popular-files">List Popular Files</a></h2>
 <p>Gets the most popularly requested files for your account,
 grouped into daily statistics</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/popularfiles.json">https://rws.netdna.com/{companyalias}/reports/popularfiles.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -4908,8 +5117,10 @@ grouped into daily statistics</p>
 <hr><h2><a href="#list-popular-files" name="list-popular-files" id="list-popular-files">List Popular Files</a></h2>
 <p>Gets the most popularly requested files for your account,
 filtered by {zone_type} and grouped into daily statistics</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_type}/popularfiles.json">https://rws.netdna.com/{companyalias}/reports/{zone_type}/popularfiles.json</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -4993,8 +5204,10 @@ filtered by {zone_type} and grouped into daily statistics</p>
 <hr><h1><a href="#reports-by-status-codes-api" name="reports-by-status-codes-api" id="reports-by-status-codes-api">Reports by Status Codes API</a></h1>
 <hr><h2><a href="#list-status-code-responses" name="list-status-code-responses" id="list-status-code-responses">List Status Code Responses</a></h2>
 <p>Gets HTTP status code response statistics for your account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/statuscodes.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/statuscodes.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -5059,8 +5272,10 @@ filtered by {zone_type} and grouped into daily statistics</p>
 <hr><h2><a href="#list-status-code-responses-by-zone-id" name="list-status-code-responses-by-zone-id" id="list-status-code-responses-by-zone-id">List Status Code Responses by Zone Id</a></h2>
 <p>Gets HTTP status code response statistics for a specific
 {zone_id}</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_id}/statuscodes.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/{zone_id}/statuscodes.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -5125,8 +5340,10 @@ filtered by {zone_type} and grouped into daily statistics</p>
 <hr><h2><a href="#list-status-codes-by-zone-type" name="list-status-codes-by-zone-type" id="list-status-codes-by-zone-type">List Status Codes by Zone Type</a></h2>
 <p>Gets HTTP status code response statistics for a specific
 {zone_type}</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_type}/statuscodes.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/{zone_type}/statuscodes.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -5191,8 +5408,10 @@ filtered by {zone_type} and grouped into daily statistics</p>
 <hr><h2><a href="#list-status-codes-by-zone-id" name="list-status-codes-by-zone-id" id="list-status-codes-by-zone-id">List Status Codes by Zone Id</a></h2>
 <p>Gets HTTP status code response statistics for a specific
 {zone_type} and {zone_id}</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_type}/{zone_id}/statuscodes.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/{zone_type}/{zone_id}/statuscodes.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -5258,8 +5477,10 @@ filtered by {zone_type} and grouped into daily statistics</p>
 <hr><h1><a href="#reports-by-file-types-api" name="reports-by-file-types-api" id="reports-by-file-types-api">Reports by File Types API</a></h1>
 <hr><h2><a href="#list-file-types" name="list-file-types" id="list-file-types">List File Types</a></h2>
 <p>Gets file type statistics for your account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/filetypes.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/filetypes.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -5317,8 +5538,10 @@ filtered by {zone_type} and grouped into daily statistics</p>
 </table>
 <hr><h2><a href="#list-file-types-by-zone-id" name="list-file-types-by-zone-id" id="list-file-types-by-zone-id">List File Types by Zone Id</a></h2>
 <p>Gets file type statistics for a specific {zone_id}</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_id}/filetypes.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/{zone_id}/filetypes.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -5376,8 +5599,10 @@ filtered by {zone_type} and grouped into daily statistics</p>
 </table>
 <hr><h2><a href="#list-file-types-by-zone-type" name="list-file-types-by-zone-type" id="list-file-types-by-zone-type">List File Types by Zone Type</a></h2>
 <p>Gets file type statistics for a specific {zone_type}</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_type}/filetypes.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/{zone_type}/filetypes.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#response-parameters" name="response-parameters" id="response-parameters">Response Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -5406,8 +5631,10 @@ filtered by {zone_type} and grouped into daily statistics</p>
 <hr><h2><a href="#list-file-types-by-zone-id" name="list-file-types-by-zone-id" id="list-file-types-by-zone-id">List File Types by Zone Id</a></h2>
 <p>Gets file type statistics for a specific {zone_type} and
 {zone_id}</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_type}/{zone_id}/filetypes.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/{zone_type}/{zone_id}/filetypes.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -5468,8 +5695,10 @@ filtered by {zone_type} and grouped into daily statistics</p>
 <hr><h2><a href="#list-file-sizes" name="list-file-sizes" id="list-file-sizes">List File Sizes</a></h2>
 <p>Gets request statistics for your account based on file size
 ranges</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/filesizes.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/filesizes.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -5564,8 +5793,10 @@ ranges</p>
 <hr><h2><a href="#list-file-sizes-by-zone-id" name="list-file-sizes-by-zone-id" id="list-file-sizes-by-zone-id">List File Sizes by Zone Id</a></h2>
 <p>Gets request statistics for the specified {zone_id} based on
 file size ranges</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_id}/filesizes.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/{zone_id}/filesizes.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -5660,8 +5891,10 @@ file size ranges</p>
 <hr><h2><a href="#list-file-sizes-by-zone-type" name="list-file-sizes-by-zone-type" id="list-file-sizes-by-zone-type">List File Sizes by Zone Type</a></h2>
 <p>Gets request statistics for the specified {zone_type} based on
 file size ranges</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_type}/filesizes.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/{zone_type}/filesizes.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -5756,8 +5989,10 @@ file size ranges</p>
 <hr><h2><a href="#list-file-sizes-by-zone-id" name="list-file-sizes-by-zone-id" id="list-file-sizes-by-zone-id">List File Sizes by Zone Id</a></h2>
 <p>Gets request statistics for the specified {zone_type} and
 {zone_id} based on file size ranges</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_type}/{zone_id}/filesizes.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/{zone_type}/{zone_id}/filesizes.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -5854,8 +6089,10 @@ file size ranges</p>
 <hr><h2><a href="#list-stats-by-directory" name="list-stats-by-directory" id="list-stats-by-directory">List Stats By Directory</a></h2>
 <p>Gets usage statistics by directory for your account. (This
 report has to be enabled by Sales).</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/statsbydir.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/statsbydir.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -5926,8 +6163,10 @@ report has to be enabled by Sales).</p>
 <hr><h2><a href="#list-stats-by-directory-and-zone-id" name="list-stats-by-directory-and-zone-id" id="list-stats-by-directory-and-zone-id">List Stats By Directory and Zone Id</a></h2>
 <p>Gets usage statistics by directory for the specified {zone_id}.
 (This report has to be enabled by Sales).</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/{zone_id}/statsbydir.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/{zone_id}/statsbydir.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -5999,8 +6238,10 @@ report has to be enabled by Sales).</p>
 <hr><h1><a href="#reports-by-file-name-api" name="reports-by-file-name-api" id="reports-by-file-name-api">Reports By File Name API</a></h1>
 <hr><h2><a href="#list-stats-by-file-name" name="list-stats-by-file-name" id="list-stats-by-file-name">List Stats By File Name</a></h2>
 <p>Gets usage statistics by file name for your account</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/clients/{client_id}/reports/statsbyfilename.json/{report_type}">https://rws.netdna.com/{companyalias}/clients/{client_id}/reports/statsbyfilename.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -6150,8 +6391,10 @@ report has to be enabled by Sales).</p>
 <hr><h2><a href="#list-stats-by-file-name-and-zone-id" name="list-stats-by-file-name-and-zone-id" id="list-stats-by-file-name-and-zone-id">List Stats By File Name and Zone Id</a></h2>
 <p>Gets usage statistics by file name for the specified
 {zone_id}</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/clients/{client_id}/reports/{zone_id}/statsbyfilename.json/{report_type}">https://rws.netdna.com/{companyalias}/clients/{client_id}/reports/{zone_id}/statsbyfilename.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -6303,8 +6546,10 @@ report has to be enabled by Sales).</p>
 <hr><h2><a href="#list-stats-by-directory" name="list-stats-by-directory" id="list-stats-by-directory">List Stats By Directory</a></h2>
 <p>Gets usage statistics by custom domain for your account. (This
 report has to be enabled by Sales).</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/clients/{client_id}/reports/statsbycustomdomain.json/{report_type}">https://rws.netdna.com/{companyalias}/clients/{client_id}/reports/statsbycustomdomain.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -6375,8 +6620,10 @@ report has to be enabled by Sales).</p>
 <hr><h2><a href="#list-stats-by-custom-domain-and-zone-id" name="list-stats-by-custom-domain-and-zone-id" id="list-stats-by-custom-domain-and-zone-id">List Stats By Custom Domain and Zone Id</a></h2>
 <p>Gets usage statistics by custom domain for the specified
 {zone_id}. (This report has to be enabled by Sales).</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/clients/{client_id}/reports/{zone_id}/statsbycustomdomain.json/{report_type}">https://rws.netdna.com/{companyalias}/clients/{client_id}/reports/{zone_id}/statsbycustomdomain.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -6448,8 +6695,10 @@ report has to be enabled by Sales).</p>
 <hr><h1><a href="#reports-for-live-zones-api" name="reports-for-live-zones-api" id="reports-for-live-zones-api">Reports for Live Zones API</a></h1>
 <hr><h2><a href="#list-connection-stats" name="list-connection-stats" id="list-connection-stats">List Connection Stats</a></h2>
 <p>Gets zone stats in hourly, daily, or monthly summaries</p>
-<div><span class="http_method">GET</span>
+<div class="heading">
+<div class="url GET"><span class="http_method">GET</span>
 <span class="path"><a href="https://rws.netdna.com/{companyalias}/reports/live/connectionstats.json/{report_type}">https://rws.netdna.com/{companyalias}/reports/live/connectionstats.json/{report_type}</a></span></div>
+</div>
 
 <hr><h3><a href="#accepted-request-parameters" name="accepted-request-parameters" id="accepted-request-parameters">Accepted Request Parameters</a></h3>
 <table class="table table-striped table-hover">
@@ -6482,4 +6731,4 @@ report has to be enabled by Sales).</p>
 </tbody>
 </table>
 <hr>
-</div></div></div><script src="js/vendor/jquery.min.js"></script><script src="js/vendor/bootstrap.min.js"></script><script src="js/vendor/prettify.js"></script><script src="js/vendor/jquery.ba-hashchange.js"></script><script src="js/vendor/jquery.scrollTo.js"></script><script src="js/vendor/bootstrap-adjust-hash.js"></script><script src="js/main.js"></script></body>
+</div></div></div></div><script src="js/vendor/jquery.min.js"></script><script src="js/vendor/bootstrap.min.js"></script><script src="js/vendor/prettify.js"></script><script src="js/vendor/jquery.ba-hashchange.js"></script><script src="js/vendor/jquery.scrollTo.js"></script><script src="js/vendor/bootstrap-adjust-hash.js"></script><script src="js/main.js"></script></body>

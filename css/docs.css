@@ -58,6 +58,13 @@ font-family:Menlo, Monaco, "Courier New", monospace;
 font-size:12px;
 }
 
+div.heading .url span.path a {
+  text-decoration: none;
+  color: black;
+  pointer-events: none;
+  cursor: default;
+}
+
 div.heading .url span.http_method {
 color:#FFF;
 text-transform:uppercase;

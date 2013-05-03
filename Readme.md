@@ -20,7 +20,7 @@
 
 2. Create a [new application](https://cp.netdna.com/account/api/create).
 
-3. Integrate with our RESTful API using your DSL wrapper:
+3. Integrate with our RESTful API using your language wrapper:
   - Node (NPM) <https://github.com/niftylettuce/node-netdna>
   - .NET <https://github.com/netdna/netdnarws-net>
   - Ruby <https://github.com/netdna/netdnarws-ruby>
@@ -28,7 +28,7 @@
   - PHP <https://github.com/netdna/netdnarws-php>
   - Perl <https://github.com/netdna/netdnarws-perl>
 
-See [Resources](#resources) and your DSL wrapper for a list of our API endpoints.
+Follow the documentation for our API below!
 
 
 ## Support

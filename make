@@ -3,7 +3,7 @@
 
 # first you need to:
 # `$ sudo npm install -g readme-docs`
-# (make sure you're using v0.0.6 or greater by checking with:
+# (make sure you're using v0.0.7 or greater by checking with:
 # `$ readme-docs --version`
 
 # now we build to the /build folder

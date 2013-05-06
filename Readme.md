@@ -7,6 +7,7 @@
 
 * [Overview](#overview)
 * [Support](#support)
+* [Changelog](#changelog)
 * [Account API](#account-api)
 * [Users API](#users-api)
 * [Zones API](#zones-api)
@@ -38,6 +39,10 @@ Have a question? Check out our [Knowledge base](http://support.netdna.com/) to s
 Still need help?  Visit our [Contact](http://www.netdna.com/contact/) page to get in touch.
 
 Feel free to tweet and follow us [@netdna](https://twitter.com/netdna) and [@netdnasupport](https://twitter.com/netdnasupport).
+
+## Changelog
+
+See [History.md](https://github.com/netdna/netdna-apidocs/blob/master/Readme.md) for a list of changes.
 
 ---
 

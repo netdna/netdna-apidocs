@@ -644,7 +644,40 @@ Parameter | Default Value | Validation | Description | Since |
 `files` | - | An array containing relative paths of the files to purge (i.e./favicon.ico) | 1.0 |
 
 
-
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby">Ruby</a></li>
+  <li><a href="#python">Python</a></li>
+  <li><a href="#php">PHP</a></li>
+  <li><a href="#node">Node</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+  	```ruby
+	require 'netdnarws'
+	api = NetDNARWS::NetDNA.new("myalias", "consumer_key", "consumer_secret")
+	api.purge(zone_id)
+	api.purge(zone_id, '/some_file')
+	api.purge(zone_id, ['/some_file', '/another_file'])
+	```
+  </div>
+  <div class="tab-pane" id="python">
+	```python
+	from netdnarws import NetDNA
+	api = NetDNA("myalias", "consumer_key", "consumer_secret")
+	api.delete("/zones/pull.json/zone_id/cache")
+	api.delete("/zones/pull.json/zone_id/cache", data={'file': '/my-file.png'})
+	```
+	</div>
+  <div class="tab-pane" id="php">...</div>
+  <div class="tab-pane" id="node">...</div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
 

@@ -683,18 +683,18 @@ Parameter | Default Value | Validation | Description | Since |
 	</pre>
   </div>
   <div class="tab-pane" id="node">
-```javascript
-var netdna = require('netdna')({
-    companyAlias: 'alias'
-  , consumerKey: 'key'
-  , consumerSecret: 'secret'
-})
-netdna.del('/zones/pull.json/zone_id', callback)
-function callback(err, response) {
-  if (err) return console.log(err)
-  console.log(response)
-}
-```
+	<pre>
+		var netdna = require('netdna')({
+		    companyAlias: 'alias'
+		  , consumerKey: 'key'
+		  , consumerSecret: 'secret'
+		})
+		netdna.del('/zones/pull.json/zone_id', callback)
+		function callback(err, response) {
+		  if (err) return console.log(err)
+		  console.log(response)
+		}
+	</pre>
   </div>
 </div>
  

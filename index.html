@@ -2131,7 +2131,19 @@ account</p>
         ?&gt;
     </pre>
   </div>
-  <div class="tab-pane" id="node">...</div>
+  <div class="tab-pane" id="node">
+<code>javascript
+var netdna = require(&#39;netdna&#39;)({
+    companyAlias: &#39;alias&#39;
+  , consumerKey: &#39;key&#39;
+  , consumerSecret: &#39;secret&#39;
+})
+netdna.del(&#39;/zones/pull.json/zone_id&#39;, callback)
+function callback(err, response) {
+  if (err) return console.log(err)
+  console.log(response)
+}</code>
+  </div>
 </div>
 
 <script>

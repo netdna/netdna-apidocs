@@ -670,7 +670,18 @@ Parameter | Default Value | Validation | Description | Since |
 	api.delete("/zones/pull.json/zone_id/cache", data={'file': '/my-file.png'})
 	</pre>
 	</div>
-  <div class="tab-pane" id="php">...</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+		<?php
+
+		require_once('NetDNA.php');
+		$api = new NetDNA("my_alias","consumer_key","consumer_secret");
+		$params = array('file' => '/robots.txt');
+		echo $api->delete('/zones/pull.json/6055/cache', $params);
+
+		?>
+	</pre>
+  </div>
   <div class="tab-pane" id="node">...</div>
 </div>
  

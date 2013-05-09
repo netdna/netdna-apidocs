@@ -655,46 +655,42 @@ Parameter | Default Value | Validation | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 	<pre>
-	require 'netdnarws'
-	api = NetDNARWS::NetDNA.new("myalias", "consumer_key", "consumer_secret")
-	api.purge(zone_id)
-	api.purge(zone_id, '/some_file')
-	api.purge(zone_id, ['/some_file', '/another_file'])
-	</pre>
+require 'netdnarws'
+api = NetDNARWS::NetDNA.new("myalias", "consumer_key", "consumer_secret")
+api.purge(zone_id)
+api.purge(zone_id, '/some_file')
+api.purge(zone_id, ['/some_file', '/another_file'])</pre>
   </div>
   <div class="tab-pane" id="python">
 	<pre>
-	from netdnarws import NetDNA
-	api = NetDNA("myalias", "consumer_key", "consumer_secret")
-	api.delete("/zones/pull.json/zone_id/cache")
-	api.delete("/zones/pull.json/zone_id/cache", data={'file': '/my-file.png'})
-	</pre>
+from netdnarws import NetDNA
+api = NetDNA("myalias", "consumer_key", "consumer_secret")
+api.delete("/zones/pull.json/zone_id/cache")
+api.delete("/zones/pull.json/zone_id/cache", data={'file': '/my-file.png'})</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-		<?php
+<?php
 
-		require_once('NetDNA.php');
-		$api = new NetDNA("my_alias","consumer_key","consumer_secret");
-		$params = array('file' => '/robots.txt');
-		echo $api->delete('/zones/pull.json/6055/cache', $params);
+require_once('NetDNA.php');
+$api = new NetDNA("my_alias","consumer_key","consumer_secret");
+$params = array('file' => '/robots.txt');
+echo $api->delete('/zones/pull.json/6055/cache', $params);
 
-		?>
-	</pre>
+?></pre>
   </div>
   <div class="tab-pane" id="node">
 	<pre>
-		var netdna = require('netdna')({
-		    companyAlias: 'alias'
-		  , consumerKey: 'key'
-		  , consumerSecret: 'secret'
-		})
-		netdna.del('/zones/pull.json/zone_id', callback)
-		function callback(err, response) {
-		  if (err) return console.log(err)
-		  console.log(response)
-		}
-	</pre>
+var netdna = require('netdna')({
+	companyAlias: 'alias'
+	, consumerKey: 'key'
+	, consumerSecret: 'secret'
+})
+netdna.del('/zones/pull.json/zone_id', callback)
+function callback(err, response) {
+  if (err) return console.log(err)
+  console.log(response)
+}</pre>
   </div>
 </div>
  

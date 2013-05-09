@@ -650,6 +650,7 @@ Parameter | Default Value | Validation | Description | Since |
   <li><a href="#python" data-toggle='tab'>Python</a></li>
   <li><a href="#php" data-toggle='tab'>PHP</a></li>
   <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
 </ul>
  
 <div class="tab-content">
@@ -689,6 +690,10 @@ function callback(err, response) {
   if (err) return console.log(err)
   console.log(response)
 }</pre>
+  </div>
+  <div class="tab-pane" id="response">
+	<pre>
+{ code: 200 }</pre>
   </div>
 </div>
  

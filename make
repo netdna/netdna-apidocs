@@ -20,4 +20,4 @@ git add .
 git commit -m 'updated api docs'
 git push origin gh-pages
 
-git checkout master
+git checkout codesamples

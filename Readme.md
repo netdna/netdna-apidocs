@@ -645,10 +645,10 @@ Parameter | Default Value | Validation | Description | Since |
 
 
 <ul class="nav nav-tabs" id="myTab">
-  <li class="active"><a href="#ruby">Ruby</a></li>
-  <li><a href="#python">Python</a></li>
-  <li><a href="#php">PHP</a></li>
-  <li><a href="#node">Node</a></li>
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
 </ul>
  
 <div class="tab-content">

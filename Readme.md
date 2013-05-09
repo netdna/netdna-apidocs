@@ -525,7 +525,7 @@ Parameter | Description | Since |
 `canonical_link_headers` | Pass the canonical URL in the Link HTTP Header | 1.0 |
 `content_disposition` | Force files to download | 1.0 |
 `pseudo_streaming` | Enable the zone for pseudo streaming content | 1.0 |
-`sslshared` | Enable Shared SSL. This feature allows you use your zone inHTTPS mode. You don't need your own SSL certificate, our servernetdna-ssl.com will be used. | 1.0 |
+`sslshared` | Enable Shared SSL. This feature allows you use your zone in HTTPS mode. You don't need your own SSL certificate, our server netdna-ssl.com will be used. | 1.0 |
 `suspend` | Flag denoting if the zone has been suspended | 1.0 |
 `locked` | Flag denoting if the zone has been locked | 1.0 |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
@@ -547,18 +547,18 @@ Parameter | Default Value | Validation | Description | Since |
 --- | --- | --- | --- | ---
 `url` | - | length: 4-100 chars; only valid URLs accepted | Origin URL | 1.0 |
 `port` | 80 | length: 1-5 chars; only digits accepted | Port | 1.0 |
-`compress` | 0 | only 0 or 1 accepted | On the fly compression of your files served from our edges.Enable GZip compression for the following file types: text/plain,text/html, text/javascript, text/css, text/xml,application/javascript, application/x-javascript, application/xml,text/x-component, application/json, application/xhtml+xml,application/rss+xml, application/atom+xml, app/vnd.ms-fontobject,image/svg+xml, application/x-font-ttf, font/opentype | 1.0 |
-`backend_compress` | 0 | only 0 or 1 accepted | Allow us to cache compressed versions of your files from theorigin. Enable GZip compression for the following file types:text/plain, text/html, text/javascript, text/css, text/xml,application/javascript, application/x-javascript, application/xml,text/x-component, application/json, application/xhtml+xml,application/rss+xml, application/atom+xml, app/vnd.ms-fontobject,image/svg+xml, application/x-font-ttf, font/opentype | 1.0 |
+`compress` | 0 | only 0 or 1 accepted | On the fly compression of your files served from our edges.Enable GZip compression for the following file types: `text/plain`, `text/html`, `text/javascript`, `text/css`, `text/xml`, `application/javascript`, `application/x-javascript`, `application/xml`, `text/x-component`, `application/json`, `application/xhtml+xml`, `application/rss+xml`, `application/atom+xml`, `app/vnd.ms-fontobject`, `image/svg+xml`, `application/x-font-ttf`, `font/opentype` | 1.0 |
+`backend_compress` | 0 | only 0 or 1 accepted | Allow us to cache compressed versions of your files from the origin. Enable GZip compression for the following file types: `text/plain`, `text/html`, `text/javascript`, `text/css`, `text/xml`, `application/javascript`, `application/x-javascript`, `application/xml`, `text/x-component`, `application/json`, `application/xhtml+xml`, `application/rss+xml`, `application/atom+xml`, `app/vnd.ms-fontobject`, `image/svg+xml`, `application/x-font-ttf`, `font/opentype` | 1.0 |
 `queries` | 0 | only 0 or 1 accepted | Treat Query Strings as a separate cacheable item | 1.0 |
 `set_host_header` | - | length: 4-100 chars; only valid URLs accepted | The URL to send as the Host in all HTTP Response Headers | 1.0 |
-`cache_valid` | - | length: 1-30 chars; must be a number followed by one of s, m,h, d, M, or Y | Ignore the origin Cache-Control Header and set every request tohave a Max-Age of 1d, 7d, 1M or 12M | 1.0 |
-`ignore_setcookie_header` | 0 | only 0 or 1 accepted | Ignore any cookies set by the origin in order to make thecontent consistently cacheable | 1.0 |
-`ignore_cache_control` | 0 | only 0 or 1 accepted | Ignore any max age values set by the origin and use the CDN setvalue instead | 1.0 |
-`use_stale` | 0 | only 0 or 1 accepted | Serve expired content while fetching new content. This willalso cause the CDN to serve expired content in cases where theorigin is down or the file is not found | 1.0 |
-`proxy_cache_lock` | 0 | only 0 or 1 accepted | When multiple requests for an uncached file are received, theywill wait until the first response is received rather than sendingeach request back to the origin | 1.0 |
+`cache_valid` | - | length: 1-30 chars; must be a number followed by one of `s`, `m`, `h`, `d`, `M`, or `Y` | Ignore the origin Cache-Control Header and set every request to have a Max-Age of `1d`, `7d`, `1M` or `12M` | 1.0 |
+`ignore_setcookie_header` | 0 | only 0 or 1 accepted | Ignore any cookies set by the origin in order to make the content consistently cacheable | 1.0 |
+`ignore_cache_control` | 0 | only 0 or 1 accepted | Ignore any max age values set by the origin and use the CDN set value instead | 1.0 |
+`use_stale` | 0 | only 0 or 1 accepted | Serve expired content while fetching new content. This will also cause the CDN to serve expired content in cases where the origin is down or the file is not found | 1.0 |
+`proxy_cache_lock` | 0 | only 0 or 1 accepted | When multiple requests for an uncached file are received, they will wait until the first response is received rather than sending each request back to the origin | 1.0 |
 `label` | - | length: 1-255 chars | Something that describes your zone | 1.0 |
-`valid_referers` | - | length: 1-100 chars | List of domains for http referrer protection (separated byspace). Only the domains in the list will be treated as validreferrers | 1.0 |
-`expires` | 1d | length: 1-32 chars | Set any request with a no "Cache-Control header" from theorigin to stay on the server. Possible values are 1d, 7d, 1M,12M | 1.0 |
+`valid_referers` | - | length: 1-100 chars | List of domains for http referrer protection (separated by space). Only the domains in the list will be treated as valid referrers | 1.0 |
+`expires` | 1d | length: 1-32 chars | Set any request with a no "Cache-Control header" from the origin to stay on the server. Possible values are 1d, 7d, 1M,12M | 1.0 |
 `disallow_robots` | 0 | only 0 or 1 accepted | Enable robots.txt | 1.0 |
 `disallow_robots_txt` | - | length: 1-255 chars | Use custom robots.txt | 1.0 |
 `canonical_link_headers` | 1 | only 0 or 1 accepted | Pass the canonical URL in the Link HTTP Header | 1.0 |
@@ -643,8 +643,65 @@ Parameter | Default Value | Validation | Description | Since |
 --- | --- | --- | --- | ---
 `files` | - | An array containing relative paths of the files to purge (i.e./favicon.ico) | 1.0 |
 
+### Code Samples
 
-
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+	<pre>
+require 'netdnarws'
+api = NetDNARWS::NetDNA.new("myalias", "consumer_key", "consumer_secret")
+api.purge(zone_id)
+api.purge(zone_id, '/some_file')
+api.purge(zone_id, ['/some_file', '/another_file'])</pre>
+  </div>
+  <div class="tab-pane" id="python">
+	<pre>
+from netdnarws import NetDNA
+api = NetDNA("myalias", "consumer_key", "consumer_secret")
+api.delete("/zones/pull.json/zone_id/cache")
+api.delete("/zones/pull.json/zone_id/cache", data={'file': '/my-file.png'})</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+<?php
+require_once('NetDNA.php');
+$api = new NetDNA("my_alias","consumer_key","consumer_secret");
+$params = array('file' => '/robots.txt');
+echo $api->delete('/zones/pull.json/6055/cache', $params);
+?></pre>
+  </div>
+  <div class="tab-pane" id="node">
+	<pre>
+var netdna = require('netdna')({
+	companyAlias: 'alias'
+	, consumerKey: 'key'
+	, consumerSecret: 'secret'
+})
+netdna.del('/zones/pull.json/zone_id', callback)
+function callback(err, response) {
+  if (err) return console.log(err)
+  console.log(response)
+}</pre>
+  </div>
+  <div class="tab-pane" id="response">
+	<pre>
+{ code: 200 }</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
 

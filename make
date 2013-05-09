@@ -17,7 +17,7 @@ git checkout gh-pages
 cp -R ~/tmp/build/* .
 rm -rf ~/tmp/build
 git add .
-git commit -m 'updated api docs'
+git commit -m 'updated api docs via make'
 git push origin gh-pages
 
 git checkout master

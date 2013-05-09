@@ -2102,14 +2102,13 @@ account</p>
 
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
-      <span>
-    <code>ruby
+    <pre class="prettyprint linenums">
     require &#39;netdnarws&#39;
     api = NetDNARWS::NetDNA.new(&quot;myalias&quot;, &quot;consumer_key&quot;, &quot;consumer_secret&quot;)
     api.purge(zone_id)
     api.purge(zone_id, &#39;/some_file&#39;)
-    api.purge(zone_id, [&#39;/some_file&#39;, &#39;/another_file&#39;])</code>
-    </span>
+    api.purge(zone_id, [&#39;/some_file&#39;, &#39;/another_file&#39;])
+    </pre>
   </div>
   <div class="tab-pane" id="python">
     <code>python

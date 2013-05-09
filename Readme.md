@@ -653,13 +653,15 @@ Parameter | Default Value | Validation | Description | Since |
  
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
-  	```ruby
+  	<span>
+	```ruby
 	require 'netdnarws'
 	api = NetDNARWS::NetDNA.new("myalias", "consumer_key", "consumer_secret")
 	api.purge(zone_id)
 	api.purge(zone_id, '/some_file')
 	api.purge(zone_id, ['/some_file', '/another_file'])
 	```
+	</span>
   </div>
   <div class="tab-pane" id="python">
 	```python

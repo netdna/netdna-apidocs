@@ -643,6 +643,7 @@ Parameter | Default Value | Validation | Description | Since |
 --- | --- | --- | --- | ---
 `files` | - | An array containing relative paths of the files to purge (i.e./favicon.ico) | 1.0 |
 
+### Code Samples
 
 <ul class="nav nav-tabs" id="myTab">
   <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
@@ -662,12 +663,12 @@ Parameter | Default Value | Validation | Description | Since |
 	</pre>
   </div>
   <div class="tab-pane" id="python">
-	```python
+	<pre>
 	from netdnarws import NetDNA
 	api = NetDNA("myalias", "consumer_key", "consumer_secret")
 	api.delete("/zones/pull.json/zone_id/cache")
 	api.delete("/zones/pull.json/zone_id/cache", data={'file': '/my-file.png'})
-	```
+	</pre>
 	</div>
   <div class="tab-pane" id="php">...</div>
   <div class="tab-pane" id="node">...</div>

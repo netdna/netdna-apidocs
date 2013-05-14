@@ -22,7 +22,7 @@
 2. Create a [new application](https://cp.netdna.com/account/api/create).
 
 3. Integrate with our RESTful API using your language wrapper:
-  - Node (NPM) <https://github.com/niftylettuce/node-netdna>
+  - Node (NPM) <https://github.com/netdna/node-netdna>
   - .NET <https://github.com/netdna/netdnarws-net>
   - Ruby <https://github.com/netdna/netdnarws-ruby>
   - Python <https://github.com/netdna/netdnarws>

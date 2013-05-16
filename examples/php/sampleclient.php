@@ -3,7 +3,8 @@
 require_once('NetDNA.php');
 
 
-$api = new NetDNA("alias","consumer_key","consumer_secret");
+$api = new NetDNA("netdnadev1","d66b7fb7137c7f2df048150d943d64f105193cbbc","a6b85ea29325582725d40265cd98e468"); // delete before commiting to git repo
+//$api = new NetDNA("alias","consumer_key","consumer_secret");
 
 //PHP examples:
 echo "<h1>PHP examples:</h1><br /><hr />";

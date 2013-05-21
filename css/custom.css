@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url(http://fonts.googleapis.com/css?family=cuprum:400,700);
 @font-face{
 	font-family:'CuprumBold';
@@ -473,3 +474,8 @@ thead tr:last-child:after{
 .span9>ol li ul li:nth-child(6) a{
 	margin-left:84px;
 }
+=======
+body {
+  background-color: blue;
+}
+>>>>>>> 9ae7c821e98f0585f41ddda0cc545b10840b043b

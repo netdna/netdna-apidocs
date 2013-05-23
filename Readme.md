@@ -104,22 +104,19 @@ Parameter | Description | Since |
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-	$api->get('/account.json');
-  	</pre>
+$api->get('/account.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
 		</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-	{"code":200,"data":
-		{"account":
-			{"id":"#####","name":"NetDNA sampleCode","alias":"aliasname","date_created":"2013-05-15 17:32:30","date_updated":"2013-05-15 19:43:36","server_id":"18","status":"2","storage_quota":"107374182400","storage_server_id":"11","ssl_credits":"-1","flex_credits":"-1","zone_credits":"-1","secure_token_pull_credits":"0","edgerules_credits":"0"}
-		}
+{"code":200,"data":
+	{"account":
+		{"id":"#####","name":"NetDNA sampleCode","alias":"aliasname","date_created":"2013-05-15 17:32:30","date_updated":"2013-05-15 19:43:36","server_id":"18","status":"2","storage_quota":"107374182400","storage_server_id":"11","ssl_credits":"-1","flex_credits":"-1","zone_credits":"-1","secure_token_pull_credits":"0","edgerules_credits":"0"}
 	}
-		</pre>
+}</pre>
   </div>
 </div>
  
@@ -174,32 +171,27 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
 		</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-		
 		</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-	$api->put('/account.json',array("name"=>"newName"));
-  	</pre>
+$api->put('/account.json',array("name"=>"newName"));</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
 		</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-	{"code":200,"data":
-		{"account":
-			{"id":"#####","name":"newName","alias":"aliasname","date_created":"2013-05-15 17:32:30","date_updated":"2013-05-23 17:58:27","server_id":"18","status":"2","storage_quota":"107374182400","storage_server_id":"11","ssl_credits":"-1","flex_credits":"-1","zone_credits":"-1","secure_token_pull_credits":"0","edgerules_credits":"0"}
-		}
+{"code":200,"data":
+	{"account":
+		{"id":"#####","name":"newName","alias":"aliasname","date_created":"2013-05-15 17:32:30","date_updated":"2013-05-23 17:58:27","server_id":"18","status":"2","storage_quota":"107374182400","storage_server_id":"11","ssl_credits":"-1","flex_credits":"-1","zone_credits":"-1","secure_token_pull_credits":"0","edgerules_credits":"0"}
 	}
-		</pre>
+}</pre>
   </div>
 </div>
  
@@ -248,32 +240,27 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
 		</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
 		</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-	$api->get('/account.json/address')
-  	</pre>
+$api->get('/account.json/address')</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-			
 		</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-	{"code":200,"data":
-		{"address":
-			{"id":"#####","street1":"123 Main Street","street2":"apt 42","city":"los angeles","state":"CA","zip":"90068","country":"US","date_created":"0000-00-00 00:00:00","date_updated":"2013-05-15 19:54:40"}
-		}
+{"code":200,"data":
+	{"address":
+		{"id":"#####","street1":"123 Main Street","street2":"apt 42","city":"los angeles","state":"CA","zip":"90068","country":"US","date_created":"0000-00-00 00:00:00","date_updated":"2013-05-15 19:54:40"}
 	}
-		</pre>
+}</pre>
   </div>
 </div>
  
@@ -334,33 +321,28 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
 		</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
 		</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-	$params = array("street1"=>"123 Main Street", "street2"=>"apt 42", "state"=>"CA");
-	$response =  $api->put('/account.json/address',$params);
-  	</pre>
+$params = array("street1"=>"123 Main Street", "street2"=>"apt 42", "state"=>"CA");
+$response =  $api->put('/account.json/address',$params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
 		</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-	{"code":200,"data":
-		{"address":
-			{"id":"#####","street1":"1234 Main Street","street2":"apt 42","city":"los angeles","state":"CA","zip":"90068","country":"US","date_created":"0000-00-00 00:00:00","date_updated":"2013-05-23 18:01:29"}
-		}
+{"code":200,"data":
+	{"address":
+		{"id":"#####","street1":"1234 Main Street","street2":"apt 42","city":"los angeles","state":"CA","zip":"90068","country":"US","date_created":"0000-00-00 00:00:00","date_updated":"2013-05-23 18:01:29"}
 	}
-		</pre>
+}</pre>
   </div>
 </div>
  

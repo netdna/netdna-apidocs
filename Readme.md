@@ -702,7 +702,7 @@ $api->delete('/users.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-No response</pre>
+{"code":200}</pre>
   </div>
 </div>
  
@@ -1998,7 +1998,7 @@ $api->get('/zones/push.json');</pre>
 {"code":200,"data":
 	{"page":1,"pages":1,"page_size":"50","current_page_size":1,"total":1,"pushzones":
 		[
-			{"id":"96182","name":"newpushzone2","type":"3","compress":"0","suspend":"0","label":null,"inactive":"0","valid_referers":null,"expires":null,"content_disposition":"0","locked":"0","server_id":"11","sslshared":"0","creation_date":"2013-05-16 15:25:19","cdn_url":"cdn.somedomain.net","tmp_url":"newpushzone2.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newpushzone2.netdnadev1.netdna-cdn.com","storage_used":"20480","storage_updated":"2013-05-23 18:31:54"}
+			{"id":"96182","name":"newpushzone2","type":"3","compress":"0","suspend":"0","label":null,"inactive":"0","valid_referers":null,"expires":null,"content_disposition":"0","locked":"0","server_id":"11","sslshared":"0","creation_date":"2013-05-16 15:25:19","cdn_url":"cdn.somedomain.net","tmp_url":"newpushzone2.alias.netdna-cdn.com","ftp_url":"ftp.newpushzone2.alias.netdna-cdn.com","storage_used":"20480","storage_updated":"2013-05-23 18:31:54"}
 		]
 	}
 }</pre>
@@ -2082,7 +2082,7 @@ $api->post('/zones/push.json', $params);</pre>
 		<pre>
 {"code":201,"data":
 	{"pushzone":
-		{"id":97181,"name":"newpushzone","type":3,"compress":0,"suspend":0,"label":null,"inactive":0,"valid_referers":null,"expires":null,"content_disposition":0,"locked":0,"server_id":"11","sslshared":null,"creation_date":"2013-05-23 21:01:39","cdn_url":"newpushzone.netdnadev1.netdna-cdn.com","tmp_url":"newpushzone.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newpushzone.netdnadev1.netdna-cdn.com","storage_used":null,"storage_updated":null}
+		{"id":97181,"name":"newpushzone","type":3,"compress":0,"suspend":0,"label":null,"inactive":0,"valid_referers":null,"expires":null,"content_disposition":0,"locked":0,"server_id":"11","sslshared":null,"creation_date":"2013-05-23 21:01:39","cdn_url":"newpushzone.alias.netdna-cdn.com","tmp_url":"newpushzone.alias.netdna-cdn.com","ftp_url":"ftp.newpushzone.alias.netdna-cdn.com","storage_used":null,"storage_updated":null}
 	}
 }
 </pre>
@@ -2213,7 +2213,7 @@ $api->get('/zones/push.json/'.$id);</pre>
 		<pre>
 {"code":200,"data":
 	{"pushzone":
-		{"id":"97181","name":"newpushzone3","type":"3","compress":"0","suspend":"0","label":null,"inactive":"0","valid_referers":null,"expires":null,"content_disposition":"0","locked":"0","server_id":"11","sslshared":"0","creation_date":"2013-05-23 21:01:39","cdn_url":"newpushzone3.netdnadev1.netdna-cdn.com","tmp_url":"newpushzone3.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newpushzone3.netdnadev1.netdna-cdn.com","storage_used":null,"storage_updated":null}
+		{"id":"97181","name":"newpushzone3","type":"3","compress":"0","suspend":"0","label":null,"inactive":"0","valid_referers":null,"expires":null,"content_disposition":"0","locked":"0","server_id":"11","sslshared":"0","creation_date":"2013-05-23 21:01:39","cdn_url":"newpushzone3.alias.netdna-cdn.com","tmp_url":"newpushzone3.alias.netdna-cdn.com","ftp_url":"ftp.newpushzone3.alias.netdna-cdn.com","storage_used":null,"storage_updated":null}
 	}
 }
 </pre>
@@ -2296,7 +2296,7 @@ $api->put('/zones/push.json/'.$id, $params);</pre>
 		<pre>
 {"code":200,"data":
 	{"pushzone":
-		{"id":"97181","name":"newpushzone3","type":"3","compress":"0","suspend":"0","label":"Some other description","inactive":"0","valid_referers":null,"expires":null,"content_disposition":"0","locked":"0","server_id":"11","sslshared":"0","creation_date":"2013-05-23 21:01:39","cdn_url":"newpushzone3.netdnadev1.netdna-cdn.com","tmp_url":"newpushzone3.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newpushzone3.netdnadev1.netdna-cdn.com","storage_used":null,"storage_updated":null}
+		{"id":"97181","name":"newpushzone3","type":"3","compress":"0","suspend":"0","label":"Some other description","inactive":"0","valid_referers":null,"expires":null,"content_disposition":"0","locked":"0","server_id":"11","sslshared":"0","creation_date":"2013-05-23 21:01:39","cdn_url":"newpushzone3.alias.netdna-cdn.com","tmp_url":"newpushzone3.alias.netdna-cdn.com","ftp_url":"ftp.newpushzone3.alias.netdna-cdn.com","storage_used":null,"storage_updated":null}
 	}
 }</pre>
   </div>
@@ -2521,7 +2521,7 @@ $api->get('/zones/push/'.$id.'/customdomains.json');</pre>
 {"code":200,"data":
 	{"total":1,"customdomains":
 		[
-			{"id":"78330","bucket_id":"96061","custom_domain":"cdn.bconklin.com","type":null}
+			{"id":"78330","bucket_id":"96061","custom_domain":"cdn.somedomain.com","type":null}
 		]
 	}
 }</pre>
@@ -2860,7 +2860,7 @@ $api->get('/zones/vod.json');</pre>
 {"code":200,"data":
 	{"page":1,"pages":1,"page_size":"50","current_page_size":1,"total":1,"vodzones":
 		[
-			{"id":"96187","name":"newvodzone","type":"4","suspend":"0","label":null,"inactive":"0","token":null,"locked":"0","server_id":"30","creation_date":"2013-05-16 16:02:35","cdn_url":"cdn.somedomain.com","tmp_url":"newvodzone.netdnadev1.netdna-cdn.com","rtmp_url":"r.newvodzone.netdnadev1.netdna-cdn.com","pseudo_url":"p.newvodzone.netdnadev1.netdna-cdn.com","direct_url":"d.newvodzone.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newvodzone.netdnadev1.netdna-cdn.com","storage_used":"4096","storage_updated":"2013-05-23 18:52:08"}
+			{"id":"96187","name":"newvodzone","type":"4","suspend":"0","label":null,"inactive":"0","token":null,"locked":"0","server_id":"30","creation_date":"2013-05-16 16:02:35","cdn_url":"cdn.somedomain.com","tmp_url":"newvodzone.alias.netdna-cdn.com","rtmp_url":"r.newvodzone.alias.netdna-cdn.com","pseudo_url":"p.newvodzone.alias.netdna-cdn.com","direct_url":"d.newvodzone.alias.netdna-cdn.com","ftp_url":"ftp.newvodzone.alias.netdna-cdn.com","storage_used":"4096","storage_updated":"2013-05-23 18:52:08"}
 		]
 	}
 }</pre>
@@ -2939,7 +2939,7 @@ $response = $api->post('/zones/vod.json',$params);</pre>
 		<pre>
 {"code":201,"data":
 	{"vodzone":
-		{"id":97183,"name":"newvodzone3","type":4,"suspend":0,"label":null,"inactive":0,"token":null,"locked":0,"server_id":"30","creation_date":"2013-05-23 21:25:43","cdn_url":"newvodzone3.netdnadev1.netdna-cdn.com","tmp_url":"newvodzone3.netdnadev1.netdna-cdn.com","rtmp_url":"r.newvodzone3.netdnadev1.netdna-cdn.com","pseudo_url":"p.newvodzone3.netdnadev1.netdna-cdn.com","direct_url":"d.newvodzone3.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newvodzone3.netdnadev1.netdna-cdn.com","storage_used":null,"storage_updated":null}
+		{"id":97183,"name":"newvodzone3","type":4,"suspend":0,"label":null,"inactive":0,"token":null,"locked":0,"server_id":"30","creation_date":"2013-05-23 21:25:43","cdn_url":"newvodzone3.alias.netdna-cdn.com","tmp_url":"newvodzone3.alias.netdna-cdn.com","rtmp_url":"r.newvodzone3.alias.netdna-cdn.com","pseudo_url":"p.newvodzone3.alias.netdna-cdn.com","direct_url":"d.newvodzone3.alias.netdna-cdn.com","ftp_url":"ftp.newvodzone3.alias.netdna-cdn.com","storage_used":null,"storage_updated":null}
 	}
 }</pre>
   </div>
@@ -3066,7 +3066,7 @@ $api->get('/zones/vod.json/'.$id);</pre>
 		<pre>
 {"code":200,"data":
 	{"vodzone":
-		{"id":"97183","name":"newvodzone3","type":"4","suspend":"0","label":null,"inactive":"0","token":null,"locked":"0","server_id":"30","creation_date":"2013-05-23 21:25:44","cdn_url":"newvodzone3.netdnadev1.netdna-cdn.com","tmp_url":"newvodzone3.netdnadev1.netdna-cdn.com","rtmp_url":"r.newvodzone3.netdnadev1.netdna-cdn.com","pseudo_url":"p.newvodzone3.netdnadev1.netdna-cdn.com","direct_url":"d.newvodzone3.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newvodzone3.netdnadev1.netdna-cdn.com","storage_used":null,"storage_updated":null}
+		{"id":"97183","name":"newvodzone3","type":"4","suspend":"0","label":null,"inactive":"0","token":null,"locked":"0","server_id":"30","creation_date":"2013-05-23 21:25:44","cdn_url":"newvodzone3.alias.netdna-cdn.com","tmp_url":"newvodzone3.alias.netdna-cdn.com","rtmp_url":"r.newvodzone3.alias.netdna-cdn.com","pseudo_url":"p.newvodzone3.alias.netdna-cdn.com","direct_url":"d.newvodzone3.alias.netdna-cdn.com","ftp_url":"ftp.newvodzone3.alias.netdna-cdn.com","storage_used":null,"storage_updated":null}
 	}
 }</pre>
   </div>
@@ -3144,7 +3144,7 @@ $api->put('/zones/vod.json/'.$id,$params);</pre>
 		<pre>
 {"code":200,"data":
 	{"vodzone":
-		{"id":"97183","name":"newvodzone3","type":"4","suspend":"0","label":"Some other description","inactive":"0","token":null,"locked":"0","server_id":"30","creation_date":"2013-05-23 21:25:44","cdn_url":"newvodzone3.netdnadev1.netdna-cdn.com","tmp_url":"newvodzone3.netdnadev1.netdna-cdn.com","rtmp_url":"r.newvodzone3.netdnadev1.netdna-cdn.com","pseudo_url":"p.newvodzone3.netdnadev1.netdna-cdn.com","direct_url":"d.newvodzone3.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newvodzone3.netdnadev1.netdna-cdn.com","storage_used":null,"storage_updated":null}
+		{"id":"97183","name":"newvodzone3","type":"4","suspend":"0","label":"Some other description","inactive":"0","token":null,"locked":"0","server_id":"30","creation_date":"2013-05-23 21:25:44","cdn_url":"newvodzone3.alias.netdna-cdn.com","tmp_url":"newvodzone3.alias.netdna-cdn.com","rtmp_url":"r.newvodzone3.alias.netdna-cdn.com","pseudo_url":"p.newvodzone3.alias.netdna-cdn.com","direct_url":"d.newvodzone3.alias.netdna-cdn.com","ftp_url":"ftp.newvodzone3.alias.netdna-cdn.com","storage_used":null,"storage_updated":null}
 	}
 }</pre>
   </div>
@@ -3706,7 +3706,7 @@ $api->get('/zones/live.json');</pre>
 {"code":200,"data":
 	{"page":1,"pages":1,"page_size":"50","current_page_size":1,"total":1,"livezones":
 		[
-			{"id":"96193","name":"newlivezone","type":"5","suspend":"0","label":null,"inactive":"0","locked":"0","server_id":"3","creation_date":"2013-05-16 16:23:49","cdn_url":"newlivezone.netdnadev1.netdna-cdn.com","tmp_url":"newlivezone.netdnadev1.netdna-cdn.com","pub_url":"publish.newlivezone.netdnadev1.netdna-cdn.com\/live\/96193","view_url":"newlivezone.netdnadev1.netdna-cdn.com\/live\/96193"}
+			{"id":"96193","name":"newlivezone","type":"5","suspend":"0","label":null,"inactive":"0","locked":"0","server_id":"3","creation_date":"2013-05-16 16:23:49","cdn_url":"newlivezone.alias.netdna-cdn.com","tmp_url":"newlivezone.alias.netdna-cdn.com","pub_url":"publish.newlivezone.alias.netdna-cdn.com\/live\/96193","view_url":"newlivezone.alias.netdna-cdn.com\/live\/96193"}
 		]
 	}
 }</pre>
@@ -3783,7 +3783,7 @@ $api->post('/zones/live.json', array("name"=>"newLiveZone3","password"=>"passwor
 		<pre>
 {"code":201,"data":
 	{"livezone":
-		{"id":97185,"name":"newlivezone3","type":5,"suspend":0,"label":null,"inactive":0,"locked":0,"server_id":3,"creation_date":"2013-05-23 21:50:00","cdn_url":"newlivezone3.netdnadev1.netdna-cdn.com","tmp_url":"newlivezone3.netdnadev1.netdna-cdn.com","pub_url":"publish.newlivezone3.netdnadev1.netdna-cdn.com\/live\/97185","view_url":"newlivezone3.netdnadev1.netdna-cdn.com\/live\/97185"}
+		{"id":97185,"name":"newlivezone3","type":5,"suspend":0,"label":null,"inactive":0,"locked":0,"server_id":3,"creation_date":"2013-05-23 21:50:00","cdn_url":"newlivezone3.alias.netdna-cdn.com","tmp_url":"newlivezone3.alias.netdna-cdn.com","pub_url":"publish.newlivezone3.alias.netdna-cdn.com\/live\/97185","view_url":"newlivezone3.alias.netdna-cdn.com\/live\/97185"}
 	}
 }</pre>
   </div>
@@ -3910,7 +3910,7 @@ $api->get('/zones/live.json/'.$id);</pre>
 		<pre>
 {"code":200,"data":
 	{"livezone":
-		{"id":"96194","name":"newlivezone2","type":"5","suspend":"0","label":"Some other description","inactive":"1","locked":"0","server_id":"3","creation_date":"2013-05-16 16:23:59","cdn_url":"newlivezone2.netdnadev1.netdna-cdn.com","tmp_url":"newlivezone2.netdnadev1.netdna-cdn.com","pub_url":"publish.newlivezone2.netdnadev1.netdna-cdn.com\/live\/96194","view_url":"newlivezone2.netdnadev1.netdna-cdn.com\/live\/96194"}
+		{"id":"96194","name":"newlivezone2","type":"5","suspend":"0","label":"Some other description","inactive":"1","locked":"0","server_id":"3","creation_date":"2013-05-16 16:23:59","cdn_url":"newlivezone2.alias.netdna-cdn.com","tmp_url":"newlivezone2.alias.netdna-cdn.com","pub_url":"publish.newlivezone2.alias.netdna-cdn.com\/live\/96194","view_url":"newlivezone2.alias.netdna-cdn.com\/live\/96194"}
 	}
 }</pre>
   </div>
@@ -3989,7 +3989,7 @@ $response =  $api->put('/zones/live.json/'.$id,$params);
 		<pre>
 {"code":200,"data":
 	{"livezone":
-		{"id":"97185","name":"newlivezone3","type":"5","suspend":"0","label":"Some other description","inactive":"0","locked":"0","server_id":"3","creation_date":"2013-05-23 21:50:00","cdn_url":"newlivezone3.netdnadev1.netdna-cdn.com","tmp_url":"newlivezone3.netdnadev1.netdna-cdn.com","pub_url":"publish.newlivezone3.netdnadev1.netdna-cdn.com\/live\/97185","view_url":"newlivezone3.netdnadev1.netdna-cdn.com\/live\/97185"}
+		{"id":"97185","name":"newlivezone3","type":"5","suspend":"0","label":"Some other description","inactive":"0","locked":"0","server_id":"3","creation_date":"2013-05-23 21:50:00","cdn_url":"newlivezone3.alias.netdna-cdn.com","tmp_url":"newlivezone3.alias.netdna-cdn.com","pub_url":"publish.newlivezone3.alias.netdna-cdn.com\/live\/97185","view_url":"newlivezone3.alias.netdna-cdn.com\/live\/97185"}
 	}
 }</pre>
   </div>
@@ -4530,7 +4530,7 @@ Parameter | Description | Since |
   	<pre>
 $type = 'pull';
 $id = '96061';
-$params = array("server_url"=>"http://cdn.bconklin.com","server"=>"http://cdn.bconklin.com","port"=>"80");
+$params = array("server_url"=>"http://cdn.somedomain.com","server"=>"http://cdn.somedomain.com","port"=>"80");
 $api->post('/zones/'.$type.'/'.$id.'/upstream.json');</pre>
   </div>
   <div class="tab-pane" id="node">
@@ -4602,7 +4602,7 @@ Parameter | Description | Since |
   	<pre>
 $type = 'pull';
 $id = '96061';
-$params = array("upsream_id"=>"93013","server_url"=>"http://bconklin.net","port"=>"80");
+$params = array("upsream_id"=>"93013","server_url"=>"http://somedomain.net","port"=>"80");
 $api->put('/zones/'.$type.'/'.$id.'/upstream.json');</pre>
   </div>
   <div class="tab-pane" id="node">

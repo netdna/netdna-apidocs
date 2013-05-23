@@ -330,7 +330,7 @@ Parameter | Description | Since |
   <div class="tab-pane" id="php">
   	<pre>
 $params = array("street1"=>"123 Main Street", "street2"=>"apt 42", "state"=>"CA");
-$response =  $api->put('/account.json/address',$params);</pre>
+$api->put('/account.json/address',$params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
@@ -492,7 +492,7 @@ Parameter | Description | Since |
   <div class="tab-pane" id="php">
   	<pre>
 $params = array("email"=>"name@domain.com","password"=>"password","firstname"=>"Given","lastname"=>"Family");
-$response =  $api->post('/users.json',$params );</pre>
+$api->post('/users.json',$params );</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
@@ -559,7 +559,7 @@ Parameter | Description | Since |
   <div class="tab-pane" id="php">
   	<pre>
 $id = '33941';
-$response =  $api->get('/users.json/'.$id);</pre>
+$api->get('/users.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
@@ -637,7 +637,7 @@ Parameter | Description | Since |
   	<pre>
 $id = '33941';
 $params =  array("firstname"=>"Billy");
-$response =  $api->put('/users.json/'.$id,$params);</pre>
+$api->put('/users.json/'.$id,$params);</pre>
 </div>
   <div class="tab-pane" id="node">
 		<pre>
@@ -739,28 +739,32 @@ Returns a list of all zones on the specified account
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
 		</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$api->get('/zones.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
 		</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"page":1,"pages":1,"page_size":"50","current_page_size":4,"total":4,"zones":
+		[
+			{"id":"#####","name":"zoneName","type":"2","suspend":"0","label":"personal","inactive":"0","locked":"0","creation_date":"2013-05-15 20:45:44","cdn_url":"cdn.somedomain.com","tmp_url":"zone.alias.netdna-cdn.com"},
+			{"id":"#####","name":"newpushzone2","type":"3","suspend":"0","label":null,"inactive":"0","locked":"0","creation_date":"2013-05-16 15:25:19","cdn_url":"cdn.somedomain.net","tmp_url":"newpushzone2.alias.netdna-cdn.com"},
+			{"id":"#####","name":"newvodzone","type":"4","suspend":"0","label":null,"inactive":"0","locked":"0","creation_date":"2013-05-16 16:02:35","cdn_url":"cdn.somedomain.com","tmp_url":"newvodzone.alias.netdna-cdn.com"},
+			{"id":"#####","name":"newlivezone","type":"5","suspend":"0","label":null,"inactive":"0","locked":"0","creation_date":"2013-05-16 16:23:49","cdn_url":"newlivezone.somedomain.netdna-cdn.com","tmp_url":"newlivezone.alias.netdna-cdn.com"}
+		]
+	}
+}</pre>
   </div>
 </div>
  
@@ -806,28 +810,27 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$api->get('/zones.json/summary');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"summary":
+		{"pull":1,"push":1,"vod":1,"live":1,"garmin":0}
+	}
+}</pre>
   </div>
 </div>
  
@@ -869,28 +872,25 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$api->get('/zones.json/count');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"count":"4"}
+}</pre>
   </div>
 </div>
  
@@ -958,28 +958,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$api->get('/zones/pull.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"page":1,"pages":1,"page_size":"50","current_page_size":1,"total":1,"pullzones":
+		[
+			{"id":"#####","name":"zoneName","url":"http:\/\/somedomain.net","port":"80","ip":"127.0.0.1","type":"2","compress":"1","backend_compress":"0","queries":"1","suspend":"0","cache_valid":"1d","label":"personal","inactive":"0","valid_referers":null,"expires":null,"disallow_robots":"0","disallow_robots_txt":null,"canonical_link_headers":"0","content_disposition":"0","locked":"0","server_id":"18","sslshared":"0","creation_date":"2013-05-15 20:45:44","set_host_header":null,"dns_check":"1","ignore_setcookie_header":"0","hide_setcookie_header":"0","ignore_cache_control":"0","use_stale":"0","proxy_cache_lock":"0","pseudo_streaming":"0","upstream_enabled":"0","cdn_url":"cdn.somedomain.com","tmp_url":"somedomain.alias.netdna-cdn.com"}
+		]
+	}
+}</pre>
   </div>
 </div>
  
@@ -1074,28 +1075,28 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$params =  array("name"=>"newPullZone2","url"=>"http://somedomain.net");
+$api->post('/zones/pull.json',$params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":201,"data":
+	{"pullzone":
+		{"id":#####,"name":"newpullzone2","url":"http:\/\/somedomain.net","port":80,"ip":"205.134.255.49","type":2,"compress":0,"backend_compress":0,"queries":"1","suspend":0,"cache_valid":"1d","label":null,"inactive":0,"valid_referers":null,"expires":null,"disallow_robots":0,"disallow_robots_txt":null,"canonical_link_headers":1,"content_disposition":0,"locked":0,"server_id":"18","sslshared":null,"creation_date":"2013-05-23 19:38:29","set_host_header":1,"dns_check":0,"ignore_setcookie_header":0,"hide_setcookie_header":0,"ignore_cache_control":0,"use_stale":0,"proxy_cache_lock":0,"pseudo_streaming":0,"upstream_enabled":0,"cdn_url":"newpullzone2.alias.netdna-cdn.com","tmp_url":"newpullzone2.alias.netdna-cdn.com"}
+	}
+}</pre>
   </div>
 </div>
  
@@ -1135,28 +1136,25 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$api->get('/zones/pull.json/count');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"count":"3"}
+}</pre>
   </div>
 </div>
  
@@ -1222,18 +1220,16 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '96076';
+$api->get('/zones/pull.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
@@ -1242,8 +1238,11 @@ Parameter | Description | Since |
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"pullzone":
+		{"id":"96076","name":"newpullzone","url":"http:\/\/somedomain.net","port":"80","ip":"127.0.0.1","type":"2","compress":"0","backend_compress":"0","queries":"1","suspend":"0","cache_valid":"1d","label":"Some other description","inactive":"1","valid_referers":null,"expires":null,"disallow_robots":"0","disallow_robots_txt":null,"canonical_link_headers":"0","content_disposition":"0","locked":"0","server_id":"18","sslshared":"0","creation_date":"2013-05-15 23:01:18","set_host_header":null,"dns_check":"1","ignore_setcookie_header":"0","hide_setcookie_header":"0","ignore_cache_control":"0","use_stale":"0","proxy_cache_lock":"0","pseudo_streaming":"0","upstream_enabled":"0","cdn_url":"newpullzone.alias.netdna-cdn.com","tmp_url":"newpullzone.alias.netdna-cdn.com"}
+	}
+}</pre>
   </div>
 </div>
  
@@ -1337,28 +1336,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '96167';
+$params = array("label"=>"Some other description");
+$api->put('/zones/pull.json/'.$id, $params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"pullzone":
+		{"id":"97167","name":"newpullzone","url":"http:\/\/somedomain.net","port":"80","ip":"127.0.0.1","type":"2","compress":"0","backend_compress":"0","queries":"1","suspend":"0","cache_valid":"1d","label":"Some other description","inactive":"0","valid_referers":null,"expires":null,"disallow_robots":"0","disallow_robots_txt":null,"canonical_link_headers":"0","content_disposition":"0","locked":"0","server_id":"18","sslshared":"0","creation_date":"2013-05-23 19:38:30","set_host_header":null,"dns_check":"1","ignore_setcookie_header":"0","hide_setcookie_header":"0","ignore_cache_control":"0","use_stale":"0","proxy_cache_lock":"0","pseudo_streaming":"0","upstream_enabled":"0","cdn_url":"newpullzone2.alias.netdna-cdn.com","tmp_url":"newpullzone2.alias.netdna-cdn.com"}
+	}
+}</pre>
   </div>
 </div>
  
@@ -1394,18 +1394,16 @@ Deletes a pull zone specified by the {zone_id} parameter
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97167';
+$api->delete('/zones/pull.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
@@ -1414,8 +1412,7 @@ Deletes a pull zone specified by the {zone_id} parameter
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200}</pre>
   </div>
 </div>
  
@@ -1451,28 +1448,24 @@ Enables a pull zone specified by the {zone_id} parameter
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97167';
+$api->enable('/zones/pull.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+</pre>
   </div>
 </div>
  
@@ -1508,28 +1501,24 @@ Disables a pull zone specified by the {zone_id} parameter
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97167';
+$api->disable('/zones/pull.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+</pre>
   </div>
 </div>
  
@@ -1570,8 +1559,6 @@ Parameter | Default Value | Validation | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 	<pre>
-require 'netdnarws'
-api = NetDNARWS::NetDNA.new("myalias", "consumer_key", "consumer_secret")
 api.purge(zone_id)
 api.purge(zone_id, '/some_file')
 api.purge(zone_id, ['/some_file', '/another_file'])</pre>
@@ -1585,12 +1572,9 @@ api.delete("/zones/pull.json/zone_id/cache", data={'file': '/my-file.png'})</pre
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-<?php
-require_once('NetDNA.php');
-$api = new NetDNA("my_alias","consumer_key","consumer_secret");
+$id = '97167';
 $params = array('file' => '/robots.txt');
-echo $api->delete('/zones/pull.json/6055/cache', $params);
-?></pre>
+$api->delete('/zones/pull.json/'.$id.'/cache', $params);</pre>
   </div>
   <div class="tab-pane" id="node">
 	<pre>
@@ -1607,7 +1591,7 @@ function callback(err, response) {
   </div>
   <div class="tab-pane" id="response">
 	<pre>
-{ code: 200 }</pre>
+{"code":200}</pre>
   </div>
 </div>
  
@@ -1652,28 +1636,30 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '96061';
+$api->get('/zones/pull/'.$id.'/customdomains.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"total":1,"customdomains":
+		[
+			{"id":"79182","bucket_id":"97167","custom_domain":"cdn.somedomain3.com","type":null}
+		]
+	}
+}</pre>
   </div>
 </div>
  
@@ -1725,28 +1711,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97167';
+$params = array("custom_domain"=>"cdn.somedomain3.com");
+$api->post('/zones/pull/'.$id.'/customdomains.json', $params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":201,"data":
+	{"customdomain":
+		{"id":79182,"bucket_id":"97167","custom_domain":"cdn.somedomain3.com","type":null}
+	}
+}</pre>
   </div>
 </div>
  
@@ -1789,28 +1776,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
 		</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$zoneId = '97167';
+$domainId = '79182';
+$api->get('/zones/pull/'.$zoneId.'/customdomains.json/'.$domainId);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"customdomain":
+		{"id":"79182","bucket_id":"97167","custom_domain":"cdn.somedomain3.com","type":null}
+	}
+}</pre>
   </div>
 </div>
  
@@ -1861,28 +1849,30 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$zoneId = '97167';
+$domainId = '79182';
+$params = array("custom_domain"=>"cdn.somenewdomain.com");
+$response =  $api->put('/zones/pull/'.$zoneId.'/customdomains.json/'.$domainId, $params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"customdomain":
+		{"id":"79182","bucket_id":"97167","custom_domain":"cdn.somenewdomain.com","type":null}
+	}
+}</pre>
   </div>
 </div>
  
@@ -1919,18 +1909,17 @@ Deletes a custom domain specified by the {zone_id} and
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$zoneId = '97167';
+$domainId = '79182';
+$api->delete('/zones/pull/'.$zoneId.'/customdomains.json/'.$domainId);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
@@ -1939,8 +1928,7 @@ Deletes a custom domain specified by the {zone_id} and
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200}</pre>
   </div>
 </div>
  
@@ -1991,28 +1979,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$api->get('/zones/push.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"page":1,"pages":1,"page_size":"50","current_page_size":1,"total":1,"pushzones":
+		[
+			{"id":"96182","name":"newpushzone2","type":"3","compress":"0","suspend":"0","label":null,"inactive":"0","valid_referers":null,"expires":null,"content_disposition":"0","locked":"0","server_id":"11","sslshared":"0","creation_date":"2013-05-16 15:25:19","cdn_url":"cdn.somedomain.net","tmp_url":"newpushzone2.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newpushzone2.netdnadev1.netdna-cdn.com","storage_used":"20480","storage_updated":"2013-05-23 18:31:54"}
+		]
+	}
+}</pre>
   </div>
 </div>
  
@@ -2074,28 +2063,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
 		</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$params = array("name"=>"newPushZone","password"=>"password");
+$api->post('/zones/push.json', $params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":201,"data":
+	{"pushzone":
+		{"id":97181,"name":"newpushzone","type":3,"compress":0,"suspend":0,"label":null,"inactive":0,"valid_referers":null,"expires":null,"content_disposition":0,"locked":0,"server_id":"11","sslshared":null,"creation_date":"2013-05-23 21:01:39","cdn_url":"newpushzone.netdnadev1.netdna-cdn.com","tmp_url":"newpushzone.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newpushzone.netdnadev1.netdna-cdn.com","storage_used":null,"storage_updated":null}
+	}
+}
+</pre>
   </div>
 </div>
  
@@ -2136,28 +2126,25 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$api->get('/zones/push.json/count');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"count":"3"}
+}</pre>
   </div>
 </div>
  
@@ -2207,28 +2194,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97181';
+$api->get('/zones/push.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"pushzone":
+		{"id":"97181","name":"newpushzone3","type":"3","compress":"0","suspend":"0","label":null,"inactive":"0","valid_referers":null,"expires":null,"content_disposition":"0","locked":"0","server_id":"11","sslshared":"0","creation_date":"2013-05-23 21:01:39","cdn_url":"newpushzone3.netdnadev1.netdna-cdn.com","tmp_url":"newpushzone3.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newpushzone3.netdnadev1.netdna-cdn.com","storage_used":null,"storage_updated":null}
+	}
+}
+</pre>
   </div>
 </div>
  
@@ -2288,28 +2276,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97181';
+$params = array("label"=>"Some other description");
+$api->put('/zones/push.json/'.$id, $params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"pushzone":
+		{"id":"97181","name":"newpushzone3","type":"3","compress":"0","suspend":"0","label":"Some other description","inactive":"0","valid_referers":null,"expires":null,"content_disposition":"0","locked":"0","server_id":"11","sslshared":"0","creation_date":"2013-05-23 21:01:39","cdn_url":"newpushzone3.netdnadev1.netdna-cdn.com","tmp_url":"newpushzone3.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newpushzone3.netdnadev1.netdna-cdn.com","storage_used":null,"storage_updated":null}
+	}
+}</pre>
   </div>
 </div>
  
@@ -2344,28 +2333,24 @@ Deletes a push zone specified by the {zone_id} parameter
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97181';
+$api->delete('/zones/push.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200}</pre>
   </div>
 </div>
  
@@ -2400,28 +2385,24 @@ Enables a push zone specified by the {zone_id} parameter
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97181';
+$api->enable('/zones/push.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+No response</pre>
   </div>
 </div>
  
@@ -2457,28 +2438,24 @@ Disables a push zone specified by the {zone_id} parameter
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97181';
+$api->disable('/zones/push.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200}</pre>
   </div>
 </div>
  
@@ -2524,28 +2501,30 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '96061';
+$api->get('/zones/push/'.$id.'/customdomains.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"total":1,"customdomains":
+		[
+			{"id":"78330","bucket_id":"96061","custom_domain":"cdn.bconklin.com","type":null}
+		]
+	}
+}</pre>
   </div>
 </div>
  
@@ -2596,28 +2575,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97181';
+$params = array("custom_domain"=>"cdn.somedomain2.net");
+$api->post('/zones/push/'.$id.'/customdomains.json', $params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":201,"data":
+	{"customdomain":
+		{"id":79188,"bucket_id":"97181","custom_domain":"cdn.somedomain3.net","type":null}
+	}
+}</pre>
   </div>
 </div>
  
@@ -2661,28 +2641,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$zoneId = '97181';
+$domainId = '79188';
+$api->get('/zones/push/'.$zoneId.'/customdomains.json/'.$domainId);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"customdomain":
+		{"id":"79188","bucket_id":"97181","custom_domain":"cdn.somedomain3.net","type":null}
+	}
+}</pre>
   </div>
 </div>
  
@@ -2732,28 +2713,31 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$zoneId = '97181';
+$domainId = '79188';
+$params = array("custom_domain"=>"cdn.somenewdomain2.com");
+$api->put('/zones/push/'.$zoneId.'/customdomains.json/'.$domainId, $params);
+</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"customdomain":
+		{"id":"79188","bucket_id":"97181","custom_domain":"cdn.somenewdomain2.com","type":null}
+	}
+}</pre>
   </div>
 </div>
  
@@ -2790,28 +2774,25 @@ Deletes a custom domain specified by the {zone_id} and
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$zoneId = '97181';
+$domainId = '79188';
+$api->delete('/zones/push/'.$zoneId.'/customdomains.json/'.$domainId);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200}</pre>
   </div>
 </div>
  
@@ -2860,28 +2841,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$api->get('/zones/vod.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"page":1,"pages":1,"page_size":"50","current_page_size":1,"total":1,"vodzones":
+		[
+			{"id":"96187","name":"newvodzone","type":"4","suspend":"0","label":null,"inactive":"0","token":null,"locked":"0","server_id":"30","creation_date":"2013-05-16 16:02:35","cdn_url":"cdn.somedomain.com","tmp_url":"newvodzone.netdnadev1.netdna-cdn.com","rtmp_url":"r.newvodzone.netdnadev1.netdna-cdn.com","pseudo_url":"p.newvodzone.netdnadev1.netdna-cdn.com","direct_url":"d.newvodzone.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newvodzone.netdnadev1.netdna-cdn.com","storage_used":"4096","storage_updated":"2013-05-23 18:52:08"}
+		]
+	}
+}</pre>
   </div>
 </div>
  
@@ -2938,28 +2920,28 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$params = array("name"=>"newVODZone3","password"=>"password");
+$response = $api->post('/zones/vod.json',$params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":201,"data":
+	{"vodzone":
+		{"id":97183,"name":"newvodzone3","type":4,"suspend":0,"label":null,"inactive":0,"token":null,"locked":0,"server_id":"30","creation_date":"2013-05-23 21:25:43","cdn_url":"newvodzone3.netdnadev1.netdna-cdn.com","tmp_url":"newvodzone3.netdnadev1.netdna-cdn.com","rtmp_url":"r.newvodzone3.netdnadev1.netdna-cdn.com","pseudo_url":"p.newvodzone3.netdnadev1.netdna-cdn.com","direct_url":"d.newvodzone3.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newvodzone3.netdnadev1.netdna-cdn.com","storage_used":null,"storage_updated":null}
+	}
+}</pre>
   </div>
 </div>
  
@@ -3000,28 +2982,25 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$api->get('/zones/vod.json/count');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"count":"3"}
+}</pre>
   </div>
 </div>
  
@@ -3068,28 +3047,28 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97183';
+$api->get('/zones/vod.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"vodzone":
+		{"id":"97183","name":"newvodzone3","type":"4","suspend":"0","label":null,"inactive":"0","token":null,"locked":"0","server_id":"30","creation_date":"2013-05-23 21:25:44","cdn_url":"newvodzone3.netdnadev1.netdna-cdn.com","tmp_url":"newvodzone3.netdnadev1.netdna-cdn.com","rtmp_url":"r.newvodzone3.netdnadev1.netdna-cdn.com","pseudo_url":"p.newvodzone3.netdnadev1.netdna-cdn.com","direct_url":"d.newvodzone3.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newvodzone3.netdnadev1.netdna-cdn.com","storage_used":null,"storage_updated":null}
+	}
+}</pre>
   </div>
 </div>
  
@@ -3145,28 +3124,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97183';
+$params =  array("label"=>"Some other description");
+$api->put('/zones/vod.json/'.$id,$params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"vodzone":
+		{"id":"97183","name":"newvodzone3","type":"4","suspend":"0","label":"Some other description","inactive":"0","token":null,"locked":"0","server_id":"30","creation_date":"2013-05-23 21:25:44","cdn_url":"newvodzone3.netdnadev1.netdna-cdn.com","tmp_url":"newvodzone3.netdnadev1.netdna-cdn.com","rtmp_url":"r.newvodzone3.netdnadev1.netdna-cdn.com","pseudo_url":"p.newvodzone3.netdnadev1.netdna-cdn.com","direct_url":"d.newvodzone3.netdnadev1.netdna-cdn.com","ftp_url":"ftp.newvodzone3.netdnadev1.netdna-cdn.com","storage_used":null,"storage_updated":null}
+	}
+}</pre>
   </div>
 </div>
  
@@ -3201,28 +3181,24 @@ Deletes a VOD zone specified by the {zone_id} parameter
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97183';
+$api->delete('/zones/vod.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200}</pre>
   </div>
 </div>
  
@@ -3257,28 +3233,24 @@ Enables a VOD zone specified by the {zone_id} parameter
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '96187';
+$api->enable('/zones/vod.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200}</pre>
   </div>
 </div>
  
@@ -3313,28 +3285,24 @@ Disables a VOD zone specified by the {zone_id} parameter
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '96187';
+$api->disable('/zones/vod.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200}</pre>
   </div>
 </div>
  
@@ -3380,28 +3348,30 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97183';
+$api->get('/zones/vod/'.$id.'/customdomains.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"total":1,"customdomains":
+		[
+			{"id":"79191","bucket_id":"97183","custom_domain":"cdn.somedomain2.com","type":"vod-rtmp"}
+		]
+	}
+}</pre>
   </div>
 </div>
  
@@ -3452,28 +3422,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97183';
+$params = array("custom_domain"=>"cdn.somedomain2.com","type"=>"vod-rtmp");
+$api->post('/zones/vod/'.$id.'/customdomains.json', $params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":201,"data":
+	{"customdomain":
+		{"id":79191,"bucket_id":"97183","custom_domain":"cdn.somedomain2.com","type":"vod-rtmp"}
+	}
+}</pre>
   </div>
 </div>
  
@@ -3517,28 +3488,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$zoneId = '97183';
+$domainId = '79191';
+$response =  $api->get('/zones/vod/'.$zoneId.'/customdomains.json/'.$domainId);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"customdomain":
+		{"id":"79191","bucket_id":"97183","custom_domain":"cdn.somedomain2.com","type":"vod-rtmp"}
+	}
+}</pre>
   </div>
 </div>
  
@@ -3588,28 +3560,30 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$zoneId = '97183';
+$domainId = '79191';
+$params = array("custom_domain"=>"cdn.somenewdomain3.com");
+$api->put('/zones/vod/'.$zoneId.'/customdomains.json/'.$domainId, $params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"customdomain":
+		{"id":"79191","bucket_id":"97183","custom_domain":"cdn.somenewdomain3.com","type":"vod-rtmp"}
+	}
+}</pre>
   </div>
 </div>
  
@@ -3646,28 +3620,25 @@ Deletes a custom domain specified by the {zone_id} and
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$zoneId = '97183';
+$domainId = '79191';
+$api->delete('/zones/vod/'.$zoneId.'/customdomains.json/'.$domainId);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200}</pre>
   </div>
 </div>
  
@@ -3716,28 +3687,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$api->get('/zones/live.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"page":1,"pages":1,"page_size":"50","current_page_size":1,"total":1,"livezones":
+		[
+			{"id":"96193","name":"newlivezone","type":"5","suspend":"0","label":null,"inactive":"0","locked":"0","server_id":"3","creation_date":"2013-05-16 16:23:49","cdn_url":"newlivezone.netdnadev1.netdna-cdn.com","tmp_url":"newlivezone.netdnadev1.netdna-cdn.com","pub_url":"publish.newlivezone.netdnadev1.netdna-cdn.com\/live\/96193","view_url":"newlivezone.netdnadev1.netdna-cdn.com\/live\/96193"}
+		]
+	}
+}</pre>
   </div>
 </div>
  
@@ -3793,28 +3765,27 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$api->post('/zones/live.json', array("name"=>"newLiveZone3","password"=>"password"));</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":201,"data":
+	{"livezone":
+		{"id":97185,"name":"newlivezone3","type":5,"suspend":0,"label":null,"inactive":0,"locked":0,"server_id":3,"creation_date":"2013-05-23 21:50:00","cdn_url":"newlivezone3.netdnadev1.netdna-cdn.com","tmp_url":"newlivezone3.netdnadev1.netdna-cdn.com","pub_url":"publish.newlivezone3.netdnadev1.netdna-cdn.com\/live\/97185","view_url":"newlivezone3.netdnadev1.netdna-cdn.com\/live\/97185"}
+	}
+}</pre>
   </div>
 </div>
  
@@ -3855,28 +3826,25 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$api->get('/zones/live.json/count');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"count":"3"}
+}</pre>
   </div>
 </div>
  
@@ -3923,28 +3891,28 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97185';
+$api->get('/zones/live.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"livezone":
+		{"id":"96194","name":"newlivezone2","type":"5","suspend":"0","label":"Some other description","inactive":"1","locked":"0","server_id":"3","creation_date":"2013-05-16 16:23:59","cdn_url":"newlivezone2.netdnadev1.netdna-cdn.com","tmp_url":"newlivezone2.netdnadev1.netdna-cdn.com","pub_url":"publish.newlivezone2.netdnadev1.netdna-cdn.com\/live\/96194","view_url":"newlivezone2.netdnadev1.netdna-cdn.com\/live\/96194"}
+	}
+}</pre>
   </div>
 </div>
  
@@ -4000,28 +3968,30 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97185';
+$params =  array("label"=>"Some other description");
+$response =  $api->put('/zones/live.json/'.$id,$params);
+</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"livezone":
+		{"id":"97185","name":"newlivezone3","type":"5","suspend":"0","label":"Some other description","inactive":"0","locked":"0","server_id":"3","creation_date":"2013-05-23 21:50:00","cdn_url":"newlivezone3.netdnadev1.netdna-cdn.com","tmp_url":"newlivezone3.netdnadev1.netdna-cdn.com","pub_url":"publish.newlivezone3.netdnadev1.netdna-cdn.com\/live\/97185","view_url":"newlivezone3.netdnadev1.netdna-cdn.com\/live\/97185"}
+	}
+}</pre>
   </div>
 </div>
  
@@ -4056,28 +4026,24 @@ Deletes a live zone specified by the {zone_id} parameter
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '97185';
+$api->delete('/zones/live.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200}</pre>
   </div>
 </div>
  
@@ -4112,28 +4078,24 @@ Enables a live zone specified by the {zone_id} parameter
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '96061';
+$api->enable('/zones/live.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200}</pre>
   </div>
 </div>
  
@@ -4169,28 +4131,24 @@ Disables a live zone specified by the {zone_id} parameter
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '96061';
+api->disable('/zones/live.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200}</pre>
   </div>
 </div>
  
@@ -4228,28 +4186,25 @@ Get the SSL certificate for the specified {zone_type} and
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '96061';
+$type = 'pull';
+$api->get('/zones/'.$type.'/'.$id.'/ssl.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+</pre>
   </div>
 </div>
  
@@ -4306,28 +4261,27 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '96061';
+$type = 'pull';
+$ssl_crt = " ... ";
+$params = array("ssl_crt"=>$ssl_crt,"ssl_key"=>"somesslkey");
+$api->post('/zones/'.$type.'/'.$id.'/ssl.json',$params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+</pre>
   </div>
 </div>
  
@@ -4384,28 +4338,27 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '96061';
+$type = 'pull';
+$ssl_crt = " ... ";
+$params = array("ssl_crt"=>$ssl_crt,"ssl_key"=>"somesslkey");
+$api->put('/zones/'.$type.'/'.$id.'/ssl.json',$params);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+</pre>
   </div>
 </div>
  
@@ -4442,28 +4395,25 @@ Remove the SSL certificate for the specified {zone_type} and
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '96061';
+$type = 'pull';
+$api->post('/zones/'.$type.'/'.$id.'/ssl.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+</pre>
   </div>
 </div>
  
@@ -4500,28 +4450,25 @@ Get the upstream information for the specified {zone_id}.
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$type = 'pull';
+$id = '96061';
+$api->post('/zones/'.$type.'/'.$id.'/upstream.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+</pre>
   </div>
 </div>
  
@@ -4573,28 +4520,26 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$type = 'pull';
+$id = '96061';
+$params = array("server_url"=>"http://cdn.bconklin.com","server"=>"http://cdn.bconklin.com","port"=>"80");
+$api->post('/zones/'.$type.'/'.$id.'/upstream.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+</pre>
   </div>
 </div>
  
@@ -4647,28 +4592,26 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$type = 'pull';
+$id = '96061';
+$params = array("upsream_id"=>"93013","server_url"=>"http://bconklin.net","port"=>"80");
+$api->put('/zones/'.$type.'/'.$id.'/upstream.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+</pre>
   </div>
 </div>
  
@@ -4704,28 +4647,25 @@ Remove the Upstream Information for the specified {zone_id}.
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$type = 'pull';
+$id = '96061';
+$api->delete('/zones/'.$type.'/'.$id.'/upstream.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+</pre>
   </div>
 </div>
  

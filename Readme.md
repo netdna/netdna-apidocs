@@ -81,6 +81,55 @@ Parameter | Description | Since |
 `date_created` | Date Created | 1.0 |
 `date_updated` | Date Updated | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+			$api->get('/account.json');
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+			{"code":200,"data":
+				{"account":
+					{"id":"19538","name":"NetDNA sampleCode","alias":"netdnadev1","date_created":"2013-05-15 17:32:30","date_updated":"2013-05-15 19:43:36","server_id":"18","status":"2","storage_quota":"107374182400","storage_server_id":"11","ssl_credits":"-1","flex_credits":"-1","zone_credits":"-1","secure_token_pull_credits":"0","edgerules_credits":"0"}
+				}
+			}
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 ## Update Account
 
@@ -112,6 +161,56 @@ Parameter | Description | Since |
 `date_updated` | Date Updated | 1.0 |
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+		
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+			$api->put('/account.json',array("name"=>"newName"));
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+			{"code":200,"data":
+				{"account":
+					{"id":"19538","name":"newName","alias":"netdnadev1","date_created":"2013-05-15 17:32:30","date_updated":"2013-05-23 17:58:27","server_id":"18","status":"2","storage_quota":"107374182400","storage_server_id":"11","ssl_credits":"-1","flex_credits":"-1","zone_credits":"-1","secure_token_pull_credits":"0","edgerules_credits":"0"}
+				}
+			}
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 ## Get Account Address
 
 Gets account address information
@@ -135,6 +234,56 @@ Parameter | Description | Since |
 `date_created` | Date Created | 1.0 |
 `date_updated` | Date Updated | 1.0 |
 
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+			$api->get('/account.json/address')
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+			
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+			{"code":200,"data":
+				{"address":
+					{"id":"18881","street1":"123 Main Street","street2":"apt 42","city":"los angeles","state":"CA","zip":"90068","country":"US","date_created":"0000-00-00 00:00:00","date_updated":"2013-05-15 19:54:40"}
+				}
+			}
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 ## Update Account Address
 
@@ -172,7 +321,54 @@ Parameter | Description | Since |
 `date_updated` | Date Updated | 1.0 |
 
 
+### Code Samples
 
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+			$params = array("street1"=>"123 Main Street", "street2"=>"apt 42", "state"=>"CA");
+			$response =  $api->put('/account.json/address',$params);
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+			{"code":200,"data":
+				{"address":
+					{"id":"18881","street1":"1234 Main Street","street2":"apt 42","city":"los angeles","state":"CA","zip":"90068","country":"US","date_created":"0000-00-00 00:00:00","date_updated":"2013-05-23 18:01:29"}
+				}
+			}
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
 
@@ -202,6 +398,52 @@ Parameter | Description | Since |
 `date_created` | Date Created | 1.0 |
 `date_updated` | Date Updated | 1.0 |
 `roles` | An array of roles for the given user | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Create User
@@ -242,6 +484,52 @@ Parameter | Description | Since |
 `roles` | An array of roles for the given user | 1.0 |
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 ## Get User
 
 Gets a user specified by the {user_id} parameter
@@ -262,6 +550,52 @@ Parameter | Description | Since |
 `phone` | Phone Number | 1.0 |
 `timezone` | User's Timezone | 1.0 |
 
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 ## Update User
 
@@ -294,6 +628,52 @@ Parameter | Description | Since |
 `phone` | Phone Number | 1.0 |
 `timezone` | User's Timezone | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Delete User
 
@@ -305,7 +685,51 @@ Deletes a user specified by the {user_id} parameter
 </div>
 
 
+### Code Samples
 
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 ---
 
 # Zones API
@@ -319,6 +743,52 @@ Returns a list of all zones on the specified account
 <span class="path">https://rws.netdna.com/{companyalias}/zones.json</span></div>
 </div>
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 ## Get Zone Summary
 
 Gets a summarized count of all zone types on the specified
@@ -329,6 +799,7 @@ account
 <span class="path">https://rws.netdna.com/{companyalias}/zones.json/summary</span></div>
 </div>
 
+
 ### Response Parameters
 
 Parameter | Description | Since |
@@ -338,6 +809,52 @@ Parameter | Description | Since |
 `vod` | The number of vod zones for your account | 1.0 |
 `live` | The number of live zones for your account | 1.0 |
 
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 ## Get Zone Count
 
@@ -356,6 +873,49 @@ Parameter | Description | Since |
 
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
 
@@ -402,6 +962,51 @@ Parameter | Description | Since |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 ## Create Pull Zone
 
@@ -473,6 +1078,51 @@ Parameter | Description | Since |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 ## Get Pull Zones Count
 
@@ -489,6 +1139,51 @@ Parameter | Description | Since |
 --- | --- | ---
 `count` | The number of pull zones on the specified account | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 ## Get Pull Zone
 
@@ -531,6 +1226,51 @@ Parameter | Description | Since |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 ## Update Pull Zone
 
@@ -601,6 +1341,53 @@ Parameter | Description | Since |
 `creation_date` | Date Created | 1.0 |
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
+
 ## Delete Pull Zone
 
 Deletes a pull zone specified by the {zone_id} parameter
@@ -609,6 +1396,54 @@ Deletes a pull zone specified by the {zone_id} parameter
 <div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}</span></div>
 </div>
+
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Enable Pull Zone
 
@@ -619,6 +1454,54 @@ Enables a pull zone specified by the {zone_id} parameter
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}</span></div>
 </div>
 
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
+
 ## Disable Pull Zone
 
 Disables a pull zone specified by the {zone_id} parameter
@@ -627,6 +1510,54 @@ Disables a pull zone specified by the {zone_id} parameter
 <div class="url DISABLE"><span class="http_method">DISABLE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}</span></div>
 </div>
+
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Purge Cache
 
@@ -725,6 +1656,52 @@ Parameter | Description | Since |
 `bucket_id` | The id of the zone the custom domain belongs to | 1.0 |
 `custom_domain` | A valid custom domain | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Create Custom Domain
 
@@ -752,6 +1729,52 @@ Parameter | Description | Since |
 `custom_domain` | The valid custom domain | 1.0 |
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 ## Get Custom Domain
 
 Gets a custom domain specified by the {zone_id} and
@@ -769,6 +1792,52 @@ Parameter | Description | Since |
 `id` | The id of the custom domain | 1.0 |
 `bucket_id` | The id of the zone the custom domain belongs to | 1.0 |
 `custom_domain` | The valid custom domain | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Update Custom Domain
@@ -796,6 +1865,53 @@ Parameter | Description | Since |
 `custom_domain` | The new valid custom domain | 1.0 |
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
+
 ## Delete Custom Domain
 
 Deletes a custom domain specified by the {zone_id} and
@@ -807,6 +1923,49 @@ Deletes a custom domain specified by the {zone_id} and
 </div>
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
 
@@ -835,6 +1994,52 @@ Parameter | Description | Since |
 `locked` | Flag denoting if the zone has been locked | 1.0 |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Create Push Zone
@@ -873,6 +2078,52 @@ Parameter | Description | Since |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Get Push Zones Count
 
@@ -888,6 +2139,52 @@ Counts all push zones on the specified account
 Parameter | Description | Since |
 --- | --- | ---
 `count` | The number of push zones on the specified account | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Get Push Zone
@@ -913,6 +2210,52 @@ Parameter | Description | Since |
 `locked` | Flag denoting if the zone has been locked | 1.0 |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Update Push Zone
@@ -949,6 +2292,52 @@ Parameter | Description | Since |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Delete Push Zone
 
@@ -959,6 +2348,53 @@ Deletes a push zone specified by the {zone_id} parameter
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}</span></div>
 </div>
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
+
 ## Enable Push Zone
 
 Enables a push zone specified by the {zone_id} parameter
@@ -967,6 +2403,53 @@ Enables a push zone specified by the {zone_id} parameter
 <div class="url ENABLE"><span class="http_method">ENABLE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}</span></div>
 </div>
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Disable Push Zone
 
@@ -977,6 +2460,50 @@ Disables a push zone specified by the {zone_id} parameter
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}</span></div>
 </div>
 
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 
 ---
@@ -1000,6 +2527,52 @@ Parameter | Description | Since |
 `id` | The id of the custom domain | 1.0 |
 `bucket_id` | The id of the zone the custom domain belongs to | 1.0 |
 `custom_domain` | A valid custom domain | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Create Custom Domain
@@ -1027,6 +2600,52 @@ Parameter | Description | Since |
 `bucket_id` | The id of the zone the custom domain belongs to | 1.0 |
 `custom_domain` | The valid custom domain | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Get Custom Domain
 
@@ -1045,6 +2664,52 @@ Parameter | Description | Since |
 `id` | The id of the custom domain | 1.0 |
 `bucket_id` | The id of the zone the custom domain belongs to | 1.0 |
 `custom_domain` | The valid custom domain | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Update Custom Domain
@@ -1071,6 +2736,52 @@ Parameter | Description | Since |
 `bucket_id` | The id of the zone the custom domain belongs to | 1.0 |
 `custom_domain` | The new valid custom domain | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Delete Custom Domain
 
@@ -1082,6 +2793,50 @@ Deletes a custom domain specified by the {zone_id} and
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json/{customdomain_id}</span></div>
 </div>
 
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 
 ---
@@ -1108,6 +2863,52 @@ Parameter | Description | Since |
 `locked` | Flag denoting if the zone has been locked | 1.0 |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Create VOD Zone
@@ -1141,6 +2942,52 @@ Parameter | Description | Since |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Get VOD Zones Count
 
@@ -1156,6 +3003,52 @@ Counts all vod zones on the specified account
 Parameter | Description | Since |
 --- | --- | ---
 `count` | The number of vod zones on the specified account | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Get VOD Zone
@@ -1178,6 +3071,52 @@ Parameter | Description | Since |
 `locked` | Flag denoting if the zone has been locked | 1.0 |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Update VOD Zone
@@ -1210,6 +3149,52 @@ Parameter | Description | Since |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Delete VOD Zone
 
@@ -1220,6 +3205,53 @@ Deletes a VOD zone specified by the {zone_id} parameter
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}</span></div>
 </div>
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
+
 ## Enable VOD Zone
 
 Enables a VOD zone specified by the {zone_id} parameter
@@ -1228,6 +3260,53 @@ Enables a VOD zone specified by the {zone_id} parameter
 <div class="url ENABLE"><span class="http_method">ENABLE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}</span></div>
 </div>
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Disable VOD Zone
 
@@ -1238,9 +3317,52 @@ Disables a VOD zone specified by the {zone_id} parameter
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}</span></div>
 </div>
 
+### Code Samples
 
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
+
 
 # VOD Zone Custom Domains API
 
@@ -1261,6 +3383,52 @@ Parameter | Description | Since |
 `id` | The id of the custom domain | 1.0 |
 `bucket_id` | The id of the zone the custom domain belongs to | 1.0 |
 `custom_domain` | A valid custom domain | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Create Custom Domain
@@ -1288,6 +3456,52 @@ Parameter | Description | Since |
 `bucket_id` | The id of the zone the custom domain belongs to | 1.0 |
 `custom_domain` | The valid custom domain | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Get Custom Domain
 
@@ -1306,6 +3520,52 @@ Parameter | Description | Since |
 `id` | The id of the custom domain | 1.0 |
 `bucket_id` | The id of the zone the custom domain belongs to | 1.0 |
 `custom_domain` | The valid custom domain | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Update Custom Domain
@@ -1332,6 +3592,52 @@ Parameter | Description | Since |
 `bucket_id` | The id of the zone the custom domain belongs to | 1.0 |
 `custom_domain` | The new valid custom domain | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Delete Custom Domain
 
@@ -1344,8 +3650,52 @@ Deletes a custom domain specified by the {zone_id} and
 </div>
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
+
 
 # Live Zone API
 
@@ -1369,6 +3719,52 @@ Parameter | Description | Since |
 `locked` | Flag denoting if the zone has been locked | 1.0 |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Create Live Zone
@@ -1401,6 +3797,52 @@ Parameter | Description | Since |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Get Live Zones Count
 
@@ -1416,6 +3858,52 @@ Counts all live zones on the specified account
 Parameter | Description | Since |
 --- | --- | ---
 `count` | The number of live zones on the specified account | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Get Live Zone
@@ -1438,6 +3926,52 @@ Parameter | Description | Since |
 `locked` | Flag denoting if the zone has been locked | 1.0 |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Update Live Zone
@@ -1470,6 +4004,52 @@ Parameter | Description | Since |
 `inactive` | Flag denoting if the zone has been deleted | 1.0 |
 `creation_date` | Date Created | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Delete Live Zone
 
@@ -1480,6 +4060,53 @@ Deletes a live zone specified by the {zone_id} parameter
 <span class="path">https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}</span></div>
 </div>
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
+
 ## Enable Live Zone
 
 Enables a live zone specified by the {zone_id} parameter
@@ -1488,6 +4115,53 @@ Enables a live zone specified by the {zone_id} parameter
 <div class="url ENABLE"><span class="http_method">ENABLE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}</span></div>
 </div>
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Disable Live Zone
 
@@ -1499,8 +4173,52 @@ Disables a live zone specified by the {zone_id} parameter
 </div>
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
+
 
 # Zones SSL API
 
@@ -1513,6 +4231,53 @@ Get the SSL certificate for the specified {zone_type} and
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/ssl.json</span></div>
 </div>
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Install SSL on Zone
 
@@ -1544,6 +4309,52 @@ Parameter | Description | Since |
 `domain` | The domain applicable to this certificate. | 1.0 |
 `date_expiration` | The date of expiration for the certificate. | 1.0 |
 `wildcard` | Flag to signify whether this is a wildcard certificate. | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Update Zone's SSL Information
@@ -1577,6 +4388,52 @@ Parameter | Description | Since |
 `date_expiration` | The date of expiration for the certificate. | 1.0 |
 `wildcard` | Flag to signify whether this is a wildcard certificate. | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Remove Zone's SSL Information
 
@@ -1589,8 +4446,52 @@ Remove the SSL certificate for the specified {zone_type} and
 </div>
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
+
 
 # Zones Upstream API
 
@@ -1602,6 +4503,53 @@ Get the upstream information for the specified {zone_id}.
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/upstream.json</span></div>
 </div>
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Enable Upstream on Zone
 
@@ -1628,6 +4576,52 @@ Parameter | Description | Since |
 `bucket_id` | The bucket_id it belongs to | 1.0.1 |
 `server_url` | The server url or ip | 1.0.1 |
 `port` | The port it uses to call the server | 1.0.1 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Update Zone's Upstream Information
@@ -1657,6 +4651,52 @@ Parameter | Description | Since |
 `server_url` | The server url or ip | 1.0.1 |
 `port` | The port it uses to call the server | 1.0.1 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Remove Zone's Upstream Information
 
@@ -1668,8 +4708,52 @@ Remove the Upstream Information for the specified {zone_id}.
 </div>
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
+
 
 # Reports by Zone API
 
@@ -1701,6 +4785,52 @@ Parameter | Description | Since |
 `noncache_hit` | The number of times a requested file was not in cache | 1.0 |
 `cache_hit` | The number of times a requested file was already cached | 1.0 |
 `timestamp` | The timestamp for the corresponding {report_type}. | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## List Stats per Zone
@@ -1734,8 +4864,52 @@ Parameter | Description | Since |
 
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
+
 
 # Reports by Location API
 
@@ -1756,6 +4930,52 @@ Parameter | Description | Since |
 `name` | Node 3 letter code | 1.0 |
 `description` | Full node name | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## List Nodes by Zone
 
@@ -1774,6 +4994,52 @@ Parameter | Description | Since |
 `id` | Node Id | 1.0 |
 `name` | Node 3 letter code | 1.0 |
 `description` | Full node name | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## List Zone Node Stats by Report Type
@@ -1808,6 +5074,52 @@ Parameter | Description | Since |
 `cache_hit` | The number of times a requested file was already cached | 1.0 |
 `timestamp` | A timestamp corresponding to {report_type}. Only returned when{report_type} is not empty. | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## List Node Stats by Zone and Report Type
 
@@ -1841,6 +5153,52 @@ Parameter | Description | Since |
 `cache_hit` | The number of times a requested file was already cached | 1.0 |
 `timestamp` | A timestamp corresponding to {report_type}. Only returned when{report_type} is not empty. | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## Get Zone Node
 
@@ -1858,6 +5216,52 @@ Parameter | Description | Since |
 `id` | Node Id | 1.0 |
 `name` | Node 3 letter code | 1.0 |
 `description` | Full node name | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Get Node by Zone
@@ -1877,6 +5281,52 @@ Parameter | Description | Since |
 `id` | Node Id | 1.0 |
 `name` | Node 3 letter code | 1.0 |
 `description` | Full node name | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Get Zone Node Stats by Report Type
@@ -1907,6 +5357,52 @@ Parameter | Description | Since |
 `noncache_hit` | The number of times a requested file was not in cache | 1.0 |
 `cache_hit` | The number of times a requested file was already cached | 1.0 |
 `timestamp` | A timestamp corresponding to {report_type}. Only returned when{report_type} is not empty. | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## Get Node Stats by Zone and Report Type
@@ -1940,8 +5436,53 @@ Parameter | Description | Since |
 
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
+
+
 
 # Reports by Popular Files API
 
@@ -1973,6 +5514,52 @@ Parameter | Description | Since |
 `size` | The amount of bytes transferred for the given file | 1.0 |
 `vhost` | The CDN URL for the corresponding zone | 1.0 |
 `timestamp` | The amount of bytes transferred | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## List Popular Files
@@ -2006,8 +5593,52 @@ Parameter | Description | Since |
 
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
+
 
 # Reports by Status Codes API
 
@@ -2036,6 +5667,52 @@ Parameter | Description | Since |
 `hit` | The number of responses with this status code | 1.0 |
 `definition` | The definition for the status code | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## List Status Code Responses by Zone Id
 
@@ -2063,6 +5740,52 @@ Parameter | Description | Since |
 `hit` | The number of responses with this status code | 1.0 |
 `definition` | The definition for the status code | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## List Status Codes by Zone Type
 
@@ -2089,6 +5812,52 @@ Parameter | Description | Since |
 `status_code` | The HTTP status code for the response | 1.0 |
 `hit` | The number of responses with this status code | 1.0 |
 `definition` | The definition for the status code | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## List Status Codes by Zone Id
@@ -2119,8 +5888,52 @@ Parameter | Description | Since |
 
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
+
 
 # Reports by File Types API
 
@@ -2148,6 +5961,52 @@ Parameter | Description | Since |
 `file_type` | The file type requested | 1.0 |
 `hit` | The number of times a file of this type has been requested | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## List File Types by Zone Id
 
@@ -2173,6 +6032,52 @@ Parameter | Description | Since |
 `file_type` | The file type requested | 1.0 |
 `hit` | The number of times a file of this type has been requested | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## List File Types by Zone Type
 
@@ -2189,6 +6094,52 @@ Parameter | Description | Since |
 --- | --- | ---
 `file_type` | The file type requested | 1.0 |
 `hit` | The number of times a file of this type has been requested | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## List File Types by Zone Id
@@ -2217,9 +6168,53 @@ Parameter | Description | Since |
 `hit` | The number of times a file of this type has been requested | 1.0 |
 
 
+### Code Samples
 
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
+
+
 
 # Reports by File Size Ranges API
 
@@ -2254,6 +6249,52 @@ Parameter | Description | Since |
 `le_100m_hits` | The number of requests for files &lt;= 100MB | 1.0 |
 `gt_100m_hits` | The number of requests for files &gt; 100MB | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## List File Sizes by Zone Id
 
@@ -2286,6 +6327,52 @@ Parameter | Description | Since |
 `le_100m_hits` | The number of requests for files &lt;= 100MB | 1.0 |
 `gt_100m_hits` | The number of requests for files &gt; 100MB | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## List File Sizes by Zone Type
 
@@ -2317,6 +6404,52 @@ Parameter | Description | Since |
 `le_10m_hits` | The number of requests for files &lt;= 10MB | 1.0 |
 `le_100m_hits` | The number of requests for files &lt;= 100MB | 1.0 |
 `gt_100m_hits` | The number of requests for files &gt; 100MB | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## List File Sizes by Zone Id
@@ -2351,9 +6484,53 @@ Parameter | Description | Since |
 `gt_100m_hits` | The number of requests for files &gt; 100MB | 1.0 |
 
 
+### Code Samples
 
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
+
+
 
 # Reports By Directory API
 
@@ -2384,6 +6561,52 @@ Parameter | Description | Since |
 `hit` | The number of requests made to files within this directory | 1.0 |
 `size` | The amount of bytes transferred from within this directory | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
+
 
 ## List Stats By Directory and Zone Id
 
@@ -2413,9 +6636,53 @@ Parameter | Description | Since |
 `size` | The amount of bytes transferred from within this directory | 1.0 |
 
 
+### Code Samples
 
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
+
+
 
 # Reports By File Name API
 
@@ -2457,6 +6724,52 @@ Parameter | Description | Since |
 `5xx` | The amount of 206 hits | 1.0 |
 `5xx` | The amount of 206 hits | 1.0 |
 `timestampf` | Timestamp | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## List Stats By File Name and Zone Id
@@ -2500,9 +6813,53 @@ Parameter | Description | Since |
 `timestampf` | Timestamp | 1.0 |
 
 
+### Code Samples
 
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
+
+
 
 # Reports By Custom Domain API
 
@@ -2532,6 +6889,52 @@ Parameter | Description | Since |
 `custom_domain_id` | The ID of your custom domain | 1.0 |
 `hit` | The number of requests made to this custom domain | 1.0 |
 `size` | The amount of bytes transferred to/from this custom domain | 1.0 |
+
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
+
+---
 
 
 ## List Stats By Custom Domain and Zone Id
@@ -2563,8 +6966,53 @@ Parameter | Description | Since |
 
 
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
+
+
 
 # Reports for Live Zones API
 
@@ -2584,6 +7032,49 @@ Parameter | Default Value | Validation | Description | Since |
 `date_from` | - | Y-m-d e.g. 2012-01-01 | Start date | 1.0 |
 `date_to` | - | Y-m-d e.g. 2012-01-01 | End date | 1.0 |
 
+### Code Samples
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#ruby" data-toggle='tab'>Ruby</a></li>
+  <li><a href="#python" data-toggle='tab'>Python</a></li>
+  <li><a href="#php" data-toggle='tab'>PHP</a></li>
+  <li><a href="#node" data-toggle='tab'>Node</a></li>
+  <li><a href="#response" data-toggle='tab'>Response</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="ruby">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="python">
+		<pre>
+
+		</pre>
+	</div>
+  <div class="tab-pane" id="php">
+  	<pre>
+
+  	</pre>
+  </div>
+  <div class="tab-pane" id="node">
+		<pre>
+
+		</pre>
+  </div>
+  <div class="tab-pane" id="response">
+		<pre>
+		
+		</pre>
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 
 ---
 

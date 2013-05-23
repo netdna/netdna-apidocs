@@ -394,18 +394,15 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
 		</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
 		</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$api->get('/users.json');</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
@@ -414,8 +411,15 @@ Parameter | Description | Since |
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"page":1,"pages":1,"page_size":"50","current_page_size":4,"total":4,"users":
+		[
+			{"id":"33706","email":"name@domain.com","firstname":"Given","lastname":"Family","phone":"3235551400","isadmin":"0","isdisabled":"0","default_company_id":"#####","brand_id":"1","timezone":"Europe\/London","date_last_login":"2013-05-23 17:54:18","ip_last_login":"12.13.90.183","date_created":"2013-05-15 17:32:30","date_updated":"2013-05-15 17:33:09","roles":["User","Account Owner"]},
+			{"id":"33714","email":"caphammer1@hamcave.com","firstname":"Captain","lastname":"Hammer","phone":null,"isadmin":"0","isdisabled":"0","default_company_id":"19538","brand_id":"1","timezone":"Europe\/London","date_last_login":null,"ip_last_login":null,"date_created":"2013-05-15 20:16:34","date_updated":"0000-00-00 00:00:00","roles":["User"]},
+			{"id":"33716","email":"drhorrible3@ele.net","firstname":"Billy","lastname":"Horrible","phone":null,"isadmin":"0","isdisabled":"0","default_company_id":"19538","brand_id":"1","timezone":"Europe\/London","date_last_login":null,"ip_last_login":null,"date_created":"2013-05-15 20:20:03","date_updated":"2013-05-15 20:31:05","roles":["User"]}
+		]
+	}
+}</pre>
   </div>
 </div>
  
@@ -479,28 +483,28 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
 		</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
 		</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$params = array("email"=>"name@domain.com","password"=>"password","firstname"=>"Given","lastname"=>"Family");
+$response =  $api->post('/users.json',$params );</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":201,"data":
+	{"user":
+		{"id":33941,"email":"name@domain.com","firstname":"Given","lastname":"Family","phone":null,"isadmin":0,"isdisabled":0,"default_company_id":"19538","brand_id":null,"timezone":"America\/Los_Angeles","date_last_login":null,"ip_last_login":null,"date_created":"2013-05-23 18:22:11","date_updated":null,"roles":["User"]}
+	}
+}</pre>
   </div>
 </div>
  
@@ -546,28 +550,28 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '33941';
+$response =  $api->get('/users.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"user":
+		{"id":"33941","email":"name@domain.com","firstname":"Given","lastname":"Family","phone":null,"isadmin":"0","isdisabled":"0","default_company_id":"19538","brand_id":"1","timezone":"Europe\/London","date_last_login":null,"ip_last_login":null,"date_created":"2013-05-23 18:22:11","date_updated":"0000-00-00 00:00:00","roles":["User"]}
+	}
+}</pre>
   </div>
 </div>
  
@@ -623,28 +627,29 @@ Parameter | Description | Since |
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
-  </div>
+$id = '33941';
+$params =  array("firstname"=>"Billy");
+$response =  $api->put('/users.json/'.$id,$params);</pre>
+</div>
   <div class="tab-pane" id="node">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+{"code":200,"data":
+	{"user":
+		{"id":"33941","email":"name@domain.com","firstname":"Billy","lastname":"Family","phone":null,"isadmin":"0","isdisabled":"0","default_company_id":"19538","brand_id":"1","timezone":"Europe\/London","date_last_login":null,"ip_last_login":null,"date_created":"2013-05-23 18:22:11","date_updated":"2013-05-23 19:10:09","roles":["User"]}
+	}
+}</pre>
   </div>
 </div>
  
@@ -680,28 +685,24 @@ Deletes a user specified by the {user_id} parameter
 <div class="tab-content">
   <div class="tab-pane active" id="ruby">
 		<pre>
-
-		</pre>
+</pre>
   </div>
   <div class="tab-pane" id="python">
 		<pre>
-
-		</pre>
+</pre>
 	</div>
   <div class="tab-pane" id="php">
   	<pre>
-
-  	</pre>
+$id = '33715';
+$api->delete('/users.json/'.$id);</pre>
   </div>
   <div class="tab-pane" id="node">
 		<pre>
-
 		</pre>
   </div>
   <div class="tab-pane" id="response">
 		<pre>
-		
-		</pre>
+No response</pre>
   </div>
 </div>
  
